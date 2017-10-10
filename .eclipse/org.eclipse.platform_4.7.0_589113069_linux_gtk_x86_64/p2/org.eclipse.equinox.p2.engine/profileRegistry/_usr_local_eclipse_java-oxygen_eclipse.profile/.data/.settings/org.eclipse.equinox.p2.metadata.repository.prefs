@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+repositories/file\:_home_rajahd2_.eclipse_org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64_configuration_org.eclipse.osgi_183_data_listener_1925729951/description=
+repositories/file\:_home_rajahd2_.eclipse_org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64_configuration_org.eclipse.osgi_183_data_listener_1925729951/isSystem=true
+repositories/file\:_home_rajahd2_.eclipse_org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64_configuration_org.eclipse.osgi_183_data_listener_1925729951/name=dropins
+repositories/file\:_home_rajahd2_.eclipse_org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64_configuration_org.eclipse.osgi_183_data_listener_1925729951/provider=
+repositories/file\:_home_rajahd2_.eclipse_org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64_configuration_org.eclipse.osgi_183_data_listener_1925729951/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_home_rajahd2_.eclipse_org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64_configuration_org.eclipse.osgi_183_data_listener_1925729951/uri=file\:/home/rajahd2/.eclipse/org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64/configuration/org.eclipse.osgi/183/data/listener_1925729951/
+repositories/file\:_home_rajahd2_.eclipse_org.eclipse.platform_4.7.0_589113069_linux_gtk_x86_64_configuration_org.eclipse.osgi_183_data_listener_1925729951/version=1
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/description=
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/enabled=true
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/isSystem=true
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/name=/usr/local/eclipse/.p2/pool/.eclipseextension
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/provider=
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/type=org.eclipse.equinox.p2.extensionlocation.metadataRepository
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/uri=file\:/usr/local/eclipse/.p2/pool/.eclipseextension
+repositories/file\:_usr_local_eclipse_.p2_pool_.eclipseextension/version=1

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="New Project" property="og:title">
+<meta content="GitLab.com" property="og:description">
+<meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/projects" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="New Project" property="twitter:title">
+<meta content="GitLab.com" property="twitter:description">
+<meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="twitter:image">
+
+<title>New Project Â· GitLab</title>
+<meta content="GitLab.com" name="description">
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-075eba76312e8421991a0c1f89a89ee81678bcde72319dd3e8047e2a47cd3a42.ico" id="favicon" />
+<link rel="stylesheet" media="all" href="/assets/application-6a3ef04d2d06f6f387f3926420b39edb4fcbcc563aedc3dc9a94e19092c3752b.css" />
+<link rel="stylesheet" media="print" href="/assets/print-74b3d49adeaada27337e759b75a34af7cf3d80051de91d60d40570f5a382e132.css" />
+
+
+<!-- / TODO: Combine these 2 stylesheets into application.scss -->
+<link rel="stylesheet" media="all" href="/assets/new_nav-9dc36451d6461185b3c501b73a23f48936cda9ee5b0b8f9b1001c951ce12eabf.css" />
+<link rel="stylesheet" media="all" href="/assets/new_sidebar-1f383f3cb338b8ecf8062dab06052141f414f51165f656b97a0930c0d38cd7dc.css" />
+<script>
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https:\/\/gitlab.com\/assets\/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=10;gon.asset_host=null;gon.webpack_public_path="\/assets\/webpack\/";gon.relative_url_root="";gon.shortcuts_path="\/help\/shortcuts";gon.user_color_scheme="white";gon.katex_css_url="\/assets\/katex-dc07578acd203b2dd73a8c78cdb8dcb79144ba11a23749d80904496b7ff8a650.css";gon.katex_js_url="\/assets\/katex-04bcf56379fcda0ee7c7a63f71d0fc15ffd2e014d017cd9d51fd6554dfccf40a.js";gon.sentry_dsn="https:\/\/526a2f38a53d44e3a8e69bfa001d1e8b@sentry.gitlap.com\/15";gon.gitlab_url="https:\/\/gitlab.com";gon.revision="eff7821";gon.gitlab_logo="\/assets\/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png";gon.current_user_id=1647436;gon.current_username="dylonrajah";gon.current_user_fullname="Dylon Rajah";gon.current_user_avatar_url="https:\/\/secure.gravatar.com\/avatar\/99cae5a32c145a2346d246e49ff03e8e?s=80\u0026d=identicon";
+//]]>
+</script>
+<script src="/assets/webpack/webpack_runtime.eb9021d1579881a98fd0.bundle.js" defer="defer"></script>
+<script src="/assets/webpack/common.c04294b903455a34f707.bundle.js" defer="defer"></script>
+<script src="/assets/webpack/locale.b9a56fbc6e00d576d16c.bundle.js" defer="defer"></script>
+<script src="/assets/webpack/main.80148fe65a50ebcaa826.bundle.js" defer="defer"></script>
+<script src="/assets/webpack/raven.c94699aec8e665da5599.bundle.js" defer="defer"></script>
+
+
+<script src="/assets/webpack/project_new.1797703a12c2d27fb520.bundle.js" defer="defer"></script>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iY318oJgaKULAq4/5PuWmysFXu6mLlQc/Sz7UIc0+1BGCc0dyK2Gc8uRTSAMJNxefAAuWazHEymC8SkJe51XGA==" />
+<meta content="origin-when-cross-origin" name="referrer">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="#474D57" name="theme-color">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-5a9cee0e8a51212e70b90c87c12f382c428870c0ff67d1eb034d884b78d2dae7.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-a6eec6aeb9da138e507593b464fdac213047e49d3093fc30e90d9a995df83ba3.png" sizes="76x76" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-retina-72e2aadf86513a56e050e7f0f2355deaa19cc17ed97bbe5147847f2748e5a3e3.png" sizes="120x120" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-retina-8ebe416f5313483d9c1bc772b5bbe03ecad52a54eba443e5215a22caed2a16a2.png" sizes="152x152" />
+<link color="rgb(226, 67, 41)" href="/assets/logo-d36b5212042cebc89b96df4bf6ac24e43db316143e89926c0db839ff694d2de4.svg" rel="mask-icon">
+<meta content="/assets/msapplication-tile-1196ec67452f618d39cdd85e2e3a542f76574c071051ae7effbfde01710eb17d.png" name="msapplication-TileImage">
+<meta content="#30353E" name="msapplication-TileColor">
+
+
+
+
+</head>
+
+<body class="ui_indigo " data-group="" data-page="projects:create" data-project="Lab 2">
+
+
+
+<header class="navbar navbar-gitlab navbar-gitlab-new">
+<a class="sr-only gl-accessibility" href="#content-body" tabindex="1">Skip to content</a>
+<div class="container-fluid">
+<div class="header-content">
+<div class="title-container">
+<h1 class="title">
+<a title="Dashboard" id="logo" href="/"><svg width="24" height="24" class="tanuki-logo" viewBox="0 0 36 36">
+  <path class="tanuki-shape tanuki-left-ear" fill="#e24329" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"/>
+  <path class="tanuki-shape tanuki-right-ear" fill="#e24329" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"/>
+  <path class="tanuki-shape tanuki-nose" fill="#e24329" d="M18,34.38 3,14 33,14 Z"/>
+  <path class="tanuki-shape tanuki-left-eye" fill="#fc6d26" d="M18,34.38 11.38,14 2,14 6,25Z"/>
+  <path class="tanuki-shape tanuki-right-eye" fill="#fc6d26" d="M18,34.38 24.62,14 34,14 30,25Z"/>
+  <path class="tanuki-shape tanuki-left-cheek" fill="#fca326" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"/>
+  <path class="tanuki-shape tanuki-right-cheek" fill="#fca326" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"/>
+</svg>
+
+<span class="logo-text hidden-xs">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 617 169"><path d="M315.26 2.97h-21.8l.1 162.5h88.3v-20.1h-66.5l-.1-142.4M465.89 136.95c-5.5 5.7-14.6 11.4-27 11.4-16.6 0-23.3-8.2-23.3-18.9 0-16.1 11.2-23.8 35-23.8 4.5 0 11.7.5 15.4 1.2v30.1h-.1m-22.6-98.5c-17.6 0-33.8 6.2-46.4 16.7l7.7 13.4c8.9-5.2 19.8-10.4 35.5-10.4 17.9 0 25.8 9.2 25.8 24.6v7.9c-3.5-.7-10.7-1.2-15.1-1.2-38.2 0-57.6 13.4-57.6 41.4 0 25.1 15.4 37.7 38.7 37.7 15.7 0 30.8-7.2 36-18.9l4 15.9h15.4v-83.2c-.1-26.3-11.5-43.9-44-43.9M557.63 149.1c-8.2 0-15.4-1-20.8-3.5V70.5c7.4-6.2 16.6-10.7 28.3-10.7 21.1 0 29.2 14.9 29.2 39 0 34.2-13.1 50.3-36.7 50.3m9.2-110.6c-19.5 0-30 13.3-30 13.3v-21l-.1-27.8h-21.3l.1 158.5c10.7 4.5 25.3 6.9 41.2 6.9 40.7 0 60.3-26 60.3-70.9-.1-35.5-18.2-59-50.2-59M77.9 20.6c19.3 0 31.8 6.4 39.9 12.9l9.4-16.3C114.5 6 97.3 0 78.9 0 32.5 0 0 28.3 0 85.4c0 59.8 35.1 83.1 75.2 83.1 20.1 0 37.2-4.7 48.4-9.4l-.5-63.9V75.1H63.6v20.1h38l.5 48.5c-5 2.5-13.6 4.5-25.3 4.5-32.2 0-53.8-20.3-53.8-63-.1-43.5 22.2-64.6 54.9-64.6M231.43 2.95h-21.3l.1 27.3v94.3c0 26.3 11.4 43.9 43.9 43.9 4.5 0 8.9-.4 13.1-1.2v-19.1c-3.1.5-6.4.7-9.9.7-17.9 0-25.8-9.2-25.8-24.6v-65h35.7v-17.8h-35.7l-.1-38.5M155.96 165.47h21.3v-124h-21.3v124M155.96 24.37h21.3V3.07h-21.3v21.3"/></svg>
+
+</span>
+</a></h1>
+<ul class="list-unstyled navbar-sub-nav">
+<li id="nav-projects-dropdown" class="home dropdown header-projects"><a data-toggle="dropdown" href="#">
+Projects
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="caret-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 10.243l-4.95-4.95a1 1 0 0 0-1.414 1.414l5.657 5.657a.997.997 0 0 0 1.414 0l5.657-5.657a1 1 0 0 0-1.414-1.414L8 10.243z"/></svg>
+
+</a>
+<div class="dropdown-menu projects-dropdown-menu">
+<div class="projects-dropdown-container">
+<div class="project-dropdown-sidebar">
+<ul>
+<li class=""><a href="/dashboard/projects">Your projects
+</a></li><li class=""><a href="/dashboard/projects/starred">Starred projects
+</a></li><li class=""><a href="/explore">Explore projects
+</a></li></ul>
+</div>
+<div class="project-dropdown-content">
+<div data-user-name="dylonrajah" id="js-projects-dropdown"></div>
+</div>
+</div>
+
+</div>
+</li><li class="hidden-xs"><a class="dashboard-shortcuts-groups" title="Groups" href="/dashboard/groups">Groups
+</a></li><li class="visible-lg"><a class="dashboard-shortcuts-activity" title="Activity" href="/dashboard/activity">Activity
+</a></li><li class="visible-lg"><a class="dashboard-shortcuts-milestones" title="Milestones" href="/dashboard/milestones">Milestones
+</a></li><li class="visible-lg"><a class="dashboard-shortcuts-snippets" title="Snippets" href="/dashboard/snippets">Snippets
+</a></li><li class="header-more dropdown hidden-lg">
+<a data-toggle="dropdown" href="#">
+More
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="caret-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 10.243l-4.95-4.95a1 1 0 0 0-1.414 1.414l5.657 5.657a.997.997 0 0 0 1.414 0l5.657-5.657a1 1 0 0 0-1.414-1.414L8 10.243z"/></svg>
+
+</a>
+<div class="dropdown-menu">
+<ul>
+<li class="visible-xs"><a class="dashboard-shortcuts-groups" title="Groups" href="/dashboard/groups">Groups
+</a></li><li class=""><a title="Activity" href="/dashboard/activity">Activity
+</a></li><li class=""><a class="dashboard-shortcuts-milestones" title="Milestones" href="/dashboard/milestones">Milestones
+</a></li><li class=""><a class="dashboard-shortcuts-snippets" title="Snippets" href="/dashboard/snippets">Snippets
+</a></li></ul>
+</div>
+</li>
+<li class="hidden">
+<a title="Projects" class="dashboard-shortcuts-projects" href="/dashboard/projects">Projects
+</a></li>
+</ul>
+
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="header-new dropdown">
+<a class="header-new-dropdown-toggle has-tooltip" title="New..." ref="tooltip" aria-label="New..." data-toggle="dropdown" data-placement="bottom" data-container="body" href="/projects/new"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9 7V4c0-.552-.448-1-1-1s-1 .448-1 1v3H4c-.552 0-1 .448-1 1s.448 1 1 1h3v3c0 .552.448 1 1 1s1-.448 1-1V9h3c.552 0 1-.448 1-1s-.448-1-1-1H9zM3 0h10c1.657 0 3 1.343 3 3v10c0 1.657-1.343 3-3 3H3c-1.657 0-3-1.343-3-3V3c0-1.657 1.343-3 3-3z"/></svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="caret-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 10.243l-4.95-4.95a1 1 0 0 0-1.414 1.414l5.657 5.657a.997.997 0 0 0 1.414 0l5.657-5.657a1 1 0 0 0-1.414-1.414L8 10.243z"/></svg>
+
+</a><div class="dropdown-menu-nav dropdown-menu-align-right">
+<ul>
+<li>
+<a href="/projects/new">New project</a>
+</li>
+<li>
+<a href="/groups/new">New group</a>
+</li>
+<li>
+<a href="/snippets/new">New snippet</a>
+</li>
+</ul>
+</div>
+</li>
+
+<li class="hidden-sm hidden-xs">
+<div class="search search-form">
+<form class="navbar-form" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><div class="search-input-container">
+<div class="search-input-wrap">
+<div class="dropdown" data-url="/search/autocomplete">
+<input type="search" name="search" id="search" placeholder="Search" class="search-input dropdown-menu-toggle no-outline js-search-dashboard-options" spellcheck="false" tabindex="1" autocomplete="off" data-toggle="dropdown" data-issues-path="https://gitlab.com/dashboard/issues" data-mr-path="https://gitlab.com/dashboard/merge_requests" aria-label="Search" />
+<div class="dropdown-menu dropdown-select">
+<div class="dropdown-content"><ul>
+<li class="dropdown-menu-empty-item">
+<a>
+Loading...
+</a>
+</li>
+</ul>
+</div><div class="dropdown-loading"><i aria-hidden="true" data-hidden="true" class="fa fa-spinner fa-spin"></i></div>
+</div>
+<i class="search-icon"></i>
+<i class="clear-icon js-clear-input"></i>
+</div>
+</div>
+</div>
+<input type="hidden" name="group_id" id="group_id" class="js-search-group-options" />
+<input type="hidden" name="project_id" id="search_project_id" value="" class="js-search-project-options" />
+<input type="hidden" name="repository_ref" id="repository_ref" />
+
+<div class="search-autocomplete-opts hide" data-autocomplete-path="/search/autocomplete"></div>
+</form></div>
+
+</li>
+<li class="visible-sm-inline-block visible-xs-inline-block">
+<a title="Search" aria-label="Search" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/search"><i aria-hidden="true" data-hidden="true" class="fa fa-search"></i>
+</a></li>
+<li class="user-counter">
+<a title="Issues" class="dashboard-shortcuts-issues" aria-label="Issues" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/dashboard/issues?assignee_id=1647436"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M10.458 15.012l.311.055a3 3 0 0 0 3.476-2.433l1.389-7.879A3 3 0 0 0 13.2 1.28L11.23.933a3.002 3.002 0 0 0-.824-.031c.364.59.58 1.28.593 2.02l1.854.328a1 1 0 0 1 .811 1.158l-1.389 7.879a1 1 0 0 1-1.158.81l-.118-.02a3.98 3.98 0 0 1-.541 1.935zM3 0h4a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zm0 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3z"/></svg>
+
+<span class="badge hidden issues-count">
+0
+</span>
+</a></li>
+<li class="user-counter">
+<a title="Merge requests" class="dashboard-shortcuts-merge_requests" aria-label="Merge requests" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/dashboard/merge_requests?assignee_id=1647436"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="m5 5.563v4.875c1.024.4 1.75 1.397 1.75 2.563 0 1.519-1.231 2.75-2.75 2.75-1.519 0-2.75-1.231-2.75-2.75 0-1.166.726-2.162 1.75-2.563v-4.875c-1.024-.4-1.75-1.397-1.75-2.563 0-1.519 1.231-2.75 2.75-2.75 1.519 0 2.75 1.231 2.75 2.75 0 1.166-.726 2.162-1.75 2.563m-1 8.687c.69 0 1.25-.56 1.25-1.25 0-.69-.56-1.25-1.25-1.25-.69 0-1.25.56-1.25 1.25 0 .69.56 1.25 1.25 1.25m0-10c.69 0 1.25-.56 1.25-1.25 0-.69-.56-1.25-1.25-1.25-.69 0-1.25.56-1.25 1.25 0 .69.56 1.25 1.25 1.25"/><path d="m10.501 2c1.381.001 2.499 1.125 2.499 2.506v5.931c1.024.4 1.75 1.397 1.75 2.563 0 1.519-1.231 2.75-2.75 2.75-1.519 0-2.75-1.231-2.75-2.75 0-1.166.726-2.162 1.75-2.563v-5.931c0-.279-.225-.506-.499-.506v.926c0 .346-.244.474-.569.271l-2.952-1.844c-.314-.196-.325-.507 0-.71l2.952-1.844c.314-.196.569-.081.569.271v.93m1.499 12.25c.69 0 1.25-.56 1.25-1.25 0-.69-.56-1.25-1.25-1.25-.69 0-1.25.56-1.25 1.25 0 .69.56 1.25 1.25 1.25"/></svg>
+
+<span class="badge hidden merge-requests-count">
+0
+</span>
+</a></li>
+<li class="user-counter">
+<a title="Todos" aria-label="Todos" class="shortcuts-todos" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/dashboard/todos"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M8.243 7.485l4.95-4.95a1 1 0 1 1 1.414 1.415L8.95 9.607a.997.997 0 0 1-1.414 0l-2.83-2.83a1 1 0 0 1 1.415-1.413l2.123 2.12zM12 11a1 1 0 0 1 2 0v2a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h2a1 1 0 1 1 0 2H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2z"/></svg>
+
+<span class="badge hidden todos-count">
+0
+</span>
+</a></li>
+<li class="header-user dropdown">
+<a class="header-user-dropdown-toggle" data-toggle="dropdown" href="/dylonrajah"><img width="23" height="23" class="header-user-avatar lazy" data-src="https://secure.gravatar.com/avatar/99cae5a32c145a2346d246e49ff03e8e?s=46&amp;d=identicon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="caret-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 10.243l-4.95-4.95a1 1 0 0 0-1.414 1.414l5.657 5.657a.997.997 0 0 0 1.414 0l5.657-5.657a1 1 0 0 0-1.414-1.414L8 10.243z"/></svg>
+
+</a><div class="dropdown-menu-nav dropdown-menu-align-right">
+<ul>
+<li class="current-user">
+<div class="user-name bold">
+Dylon Rajah
+</div>
+@dylonrajah
+</li>
+<li class="divider"></li>
+<li>
+<a class="profile-link" data-user="dylonrajah" href="/dylonrajah">Profile</a>
+</li>
+<li>
+<a href="/profile">Settings</a>
+</li>
+<li>
+<a href="/help">Help</a>
+</li>
+<li class="divider"></li>
+<li>
+<a class="sign-out-link" rel="nofollow" data-method="delete" href="/users/sign_out">Sign out</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle hidden-sm hidden-md hidden-lg" type="button">
+<span class="sr-only">Toggle navigation</span>
+<i aria-hidden="true" data-hidden="true" class="fa fa-ellipsis-v js-navbar-toggle-right"></i>
+<i aria-hidden="true" data-hidden="true" class="fa fa-times js-navbar-toggle-left"></i>
+</button>
+</div>
+</div>
+</header>
+
+
+<div class="page-with-sidebar">
+<div class="content-wrapper page-with-new-nav">
+<div class="mobile-overlay"></div>
+<div class="alert-wrapper">
+
+
+<nav class="breadcrumbs container-fluid container-limited" role="navigation">
+<div class="breadcrumbs-container">
+<div class="breadcrumbs-links js-title-container">
+<ul class="list-unstyled breadcrumbs-list js-breadcrumbs-list">
+
+<li>
+<h2 class="breadcrumbs-sub-title">Projects</h2>
+</li>
+</ul>
+</div>
+
+</div>
+</nav>
+
+<div class="flash-container flash-container-page">
+</div>
+
+</div>
+<div class="container-fluid container-limited ">
+<div class="content" id="content-body">
+<div class="project-edit-container">
+<div class="project-edit-errors">
+<div class="alert alert-danger" id="error_explanation"><h4>The form contains the following errors:</h4><ul><li>Path can contain only letters, digits, &#39;_&#39;, &#39;-&#39; and &#39;.&#39;. Cannot start with &#39;-&#39; or end in &#39;.&#39;, &#39;.git&#39; or &#39;.atom&#39;.</li><li>Path can contain only letters, digits, &#39;_&#39;, &#39;-&#39; and &#39;.&#39;. Cannot start with &#39;-&#39;, end in &#39;.git&#39; or end in &#39;.atom&#39;</li></ul></div>
+
+</div>
+<div class="row prepend-top-default">
+<div class="col-lg-3 profile-settings-sidebar">
+<h4 class="prepend-top-0">
+New project
+</h4>
+<p>
+Create or Import your project from popular Git services
+</p>
+</div>
+<div class="col-lg-9 js-toggle-container">
+<form class="new_project" id="new_project" action="/projects" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Hk+fb92iMtF0r23XUy+72eUnNJmW4VaNoJrm+TkOq2nRy6eAl2/cB7Q8jsi78PEcsiJELpwIEbjfRzSgxacHIQ==" /><div class="create-project-options">
+<div class="first-column">
+<div class="project-template">
+<div class="form-group">
+<label class="label-light" for="project_template_project">Create from template
+<a target="_blank" aria-label="Whatâ€™s included in a template?" title="Whatâ€™s included in a template?" class="has-tooltip" data-placement="top" href="/help/gitlab-basics/create-project"><i aria-hidden="true" data-hidden="true" class="fa fa-question-circle"></i></a>
+</label><div>
+<div class="project-templates-buttons import-buttons" data-toggle="buttons">
+<div class="btn blank-option active">
+<input autocomplete="off" checked="true" id="blank" name="project[template_name]" type="radio" value="">
+<i aria-hidden="true" data-hidden="true" class="fa fa-file-o btn-template-icon"></i>
+Blank
+</div>
+<div class="btn">
+<input autocomplete="off" id="rails" name="project[template_name]" type="radio" value="rails">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" class="btn-template-icon icon-rails">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -6)">
+    <rect width="32" height="32"/>
+    <path fill="#C00" fill-rule="nonzero" d="M0.984615385,25.636044 C0.984615385,25.636044 1.40659341,21.4725275 4.36043956,16.5494505 C7.31428571,11.6263736 12.3498901,7.8989011 16.4430769,7.53318681 C24.5872527,6.71736264 31.9015385,14.0175824 31.9015385,14.0175824 C31.9015385,14.0175824 31.6624176,14.1863736 31.4092308,14.3973626 C23.4197802,8.48967033 18.5389011,11.2747253 17.0057143,12.0202198 C9.97274725,15.9446154 12.0967033,25.636044 12.0967033,25.636044 L0.984615385,25.636044 Z M24.1371429,8.32087912 C23.687033,8.13802198 23.2369231,7.96923077 22.7727473,7.81450549 L22.829011,6.88615385 C23.7151648,7.13934066 24.0668132,7.30813187 24.1934066,7.37846154 L24.1371429,8.32087912 Z M22.8008791,11.3028571 C23.250989,11.330989 23.7151648,11.3872527 24.1934066,11.4857143 L24.1371429,12.3578022 C23.672967,12.2593407 23.2087912,12.2030769 22.7446154,12.189011 L22.8008791,11.3028571 Z M17.5964835,6.91428571 C17.1885714,6.91428571 16.7806593,6.92835165 16.3727473,6.97054945 L16.1054945,6.14065934 C16.5696703,6.0843956 17.0197802,6.05626374 17.4558242,6.05626374 L17.7371429,6.91428571 C17.6949451,6.91428571 17.6386813,6.91428571 17.5964835,6.91428571 Z M18.2716484,12.0905495 C18.6232967,11.9358242 19.0312088,11.7810989 19.5094505,11.6404396 L19.8189011,12.5687912 C19.410989,12.6953846 19.0030769,12.8641758 18.5951648,13.0610989 L18.2716484,12.0905495 Z M11.8857143,8.39120879 C11.52,8.57406593 11.1683516,8.78505495 10.8026374,9.01010989 L10.1556044,8.02549451 C10.5353846,7.80043956 10.9010989,7.60351648 11.2527473,7.42065934 L11.8857143,8.39120879 Z M14.7692308,14.7208791 C15.0224176,14.3973626 15.3178022,14.0738462 15.6413187,13.7784615 L16.2742857,14.7349451 C15.9648352,15.0584615 15.6835165,15.381978 15.4443956,15.7336264 L14.7692308,14.7208791 Z M12.7296703,19.2501099 C12.8421978,18.7437363 12.9687912,18.2232967 13.1516484,17.7028571 L14.1643956,18.5046154 C14.0237363,19.0531868 13.9252747,19.6017582 13.869011,20.1503297 L12.7296703,19.2501099 Z M6.56879121,12.5687912 C6.23120879,12.9204396 5.90769231,13.3002198 5.61230769,13.68 L4.52923077,12.7516484 C4.85274725,12.4 5.2043956,12.0483516 5.57010989,11.6967033 L6.56879121,12.5687912 Z M2.32087912,18.8562637 C2.09582418,19.3767033 1.80043956,20.0659341 1.61758242,20.5441758 L0,19.9534066 C0.140659341,19.5736264 0.436043956,18.8703297 0.703296703,18.2654945 L2.32087912,18.8562637 Z M12.5186813,22.8228571 L14.0378022,23.3714286 C14.1221978,24.0325275 14.2487912,24.6514286 14.3753846,25.2 L12.6874725,24.5951648 C12.6171429,24.1731868 12.5468132,23.5683516 12.5186813,22.8228571 Z"/>
+  </g>
+</svg>
+
+Ruby on Rails
+</div>
+<div class="btn">
+<input autocomplete="off" id="spring" name="project[template_name]" type="radio" value="spring">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="btn-template-icon icon-java-spring">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="32" height="32"/>
+    <path fill="#70AD51" d="M5.46647617,27.9932117 C6.0517027,28.4658996 6.91159892,28.3777063 7.38425926,27.7914452 C7.85922261,27.2048452 7.76991326,26.3449044 7.18398981,25.8699411 C6.59874295,25.3956543 5.74015536,25.4869934 5.26383884,26.0722403 C4.81393367,26.6267596 4.87238621,27.4284565 5.37913494,27.9159868 L5.11431334,27.6818383 C1.97157151,24.7616933 0,20.5966301 0,15.9782542 C0,7.16842834 7.16775175,0 15.9796074,0 C20.4586065,0 24.5113565,1.8565519 27.4145869,4.8362365 C28.0749348,3.93840692 28.6466499,2.93435335 29.115524,1.82069284 C31.1513712,7.93770658 32.3482517,13.0811131 31.909824,17.1311567 C31.3178113,25.4044499 24.4017495,31.9585382 15.9796074,31.9585382 C12.0682639,31.9585382 8.48438805,30.5444735 5.7042963,28.2034861 L5.46647617,27.9932117 Z M29.0471888,23.0106888 C33.0546075,17.6737787 30.8211972,9.04527781 28.9612624,3.529749 C27.3029502,6.98304378 23.2217836,9.62375882 19.6981239,10.4613722 C16.3950312,11.2482417 13.4715032,10.6021021 10.4153644,11.7780085 C3.44517575,14.457289 3.55613585,22.7698242 7.39373146,24.6365249 C7.39711439,24.6392312 7.62444728,24.7616933 7.62174094,24.7576338 C7.62309411,24.7562806 13.2658211,23.6358542 16.3862356,22.4843049 C20.9450718,20.7996058 25.9524846,16.6494275 27.5986182,11.8273993 C26.723116,16.8415779 22.4179995,21.6669891 18.093262,23.8828081 C15.7908399,25.0648038 14.0005934,25.3279957 10.2123886,26.6385428 C9.74892722,26.798217 9.38492397,26.9538318 9.38492397,26.9538318 C10.3463526,26.7948341 11.301692,26.7420604 11.301692,26.7420604 C16.6954354,26.4869875 25.1087819,28.2582896 29.0471888,23.0106888 Z"/>
+  </g>
+</svg>
+
+Spring
+</div>
+<div class="btn">
+<input autocomplete="off" id="express" name="project[template_name]" type="radio" value="express">
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" viewBox="0 0 27 32" class="btn-template-icon icon-node-express">
+  <g fill="none" fill-rule="evenodd" transform="translate(-3)">
+    <rect width="32" height="32"/>
+    <path fill="#353535" d="M4.19170065,16.2667139 C4.23142421,18.3323387 4.47969269,20.2489714 4.93651356,22.0166696 C5.39333443,23.7843677 6.09841693,25.3236323 7.05178222,26.6345096 C8.00514751,27.9453869 9.23655921,28.9781838 10.7460543,29.7329313 C12.2555493,30.4876788 14.1026668,30.8650469 16.2874623,30.8650469 C19.5050701,30.8650469 22.1764391,30.0209341 24.3016492,28.3326831 C26.4268593,26.644432 27.7476477,24.1120935 28.2640539,20.7355914 L29.4557545,20.7355914 C29.0187954,24.3107112 27.6086304,27.0813875 25.2252172,29.0477034 C22.841804,31.0140194 19.9023051,31.9971626 16.4066324,31.9971626 C14.0232191,32.0368861 11.9874175,31.659518 10.2991665,30.8650469 C8.61091547,30.0705759 7.23054269,28.9484023 6.15800673,27.4984926 C5.08547078,26.0485829 4.29101162,24.3404957 3.77460543,22.3741798 C3.25819923,20.4078639 3,18.2926164 3,16.0283738 C3,13.4860664 3.3773681,11.2218578 4.13211562,9.23568007 C4.88686314,7.24950238 5.87993709,5.57120741 7.11136726,4.20074481 C8.34279742,2.8302822 9.77282391,1.78755456 11.4014896,1.07253059 C13.0301553,0.357506621 14.6985195,0 16.4066324,0 C18.7900456,0 20.8457087,0.456814016 22.5736832,1.37045575 C24.3016578,2.28409749 25.7118228,3.4956477 26.8042206,5.00514275 C27.8966183,6.51463779 28.6910775,8.24258646 29.1876219,10.1890406 C29.6841663,12.1354947 29.8927118,14.1613656 29.8132647,16.2667139 L4.19170065,16.2667139 Z M28.6215641,15.0750133 C28.6215641,13.2080062 28.3633648,11.4304039 27.8469586,9.74215285 C27.3305524,8.05390181 26.5658855,6.57422163 25.5529349,5.30306791 C24.5399843,4.03191419 23.2787803,3.0289095 21.7692853,2.29402376 C20.2597903,1.55913801 18.5119801,1.19170065 16.5258024,1.19170065 C14.8574132,1.19170065 13.2982871,1.50948432 11.8483774,2.14506118 C10.3984676,2.78063804 9.12733299,3.70419681 8.03493526,4.9157652 C6.94253754,6.12733359 6.05870172,7.58715229 5.38340131,9.2952651 C4.70810089,11.0033779 4.31087132,12.9299414 4.19170065,15.0750133 L28.6215641,15.0750133 Z"/>
+  </g>
+</svg>
+
+NodeJS Express
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="second-column">
+<div class="project-import">
+<div class="form-group clearfix">
+<label class="label-light" for="project_visibility_level">Import project from
+</label><div class="col-sm-12 import-buttons">
+<div>
+<a class="btn import_github" href="/import/github/new"><i aria-hidden="true" data-hidden="true" class="fa fa-github"></i> GitHub
+</a></div>
+<div>
+<a class="btn import_bitbucket " href="/import/bitbucket/status"><i aria-hidden="true" data-hidden="true" class="fa fa-bitbucket"></i> Bitbucket
+</a></div>
+<div>
+</div>
+<div>
+<a class="btn import_google_code" href="/import/google_code/new"><i aria-hidden="true" data-hidden="true" class="fa fa-google"></i> Google Code
+</a></div>
+<div>
+<a class="btn import_fogbugz" href="/import/fogbugz/new"><i aria-hidden="true" data-hidden="true" class="fa fa-bug"></i> Fogbugz
+</a></div>
+<div>
+<a class="btn import_gitea" href="https://gitlab.com/import/gitea/new"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill-rule="evenodd" transform="translate(0 1)"><path d="m14 15.01h1v-8.02c0-3.862-3.134-6.991-7-6.991-3.858 0-7 3.13-7 6.991v8.02h1v-8.02c0-3.306 2.691-5.991 6-5.991 3.314 0 6 2.682 6 5.991v8.02m-10.52-13.354c-.366-.402-.894-.655-1.48-.655-1.105 0-2 .895-2 2 0 .868.552 1.606 1.325 1.883.102-.321.226-.631.371-.93-.403-.129-.695-.507-.695-.953 0-.552.448-1 1-1 .306 0 .58.138.764.354.222-.25.461-.483.717-.699m9.04-.002c.366-.401.893-.653 1.479-.653 1.105 0 2 .895 2 2 0 .867-.552 1.606-1.324 1.883-.101-.321-.225-.632-.37-.931.403-.129.694-.507.694-.952 0-.552-.448-1-1-1-.305 0-.579.137-.762.353-.222-.25-.461-.483-.717-.699"/><path d="m5.726 7.04h1.557v.124c0 .283-.033.534-.1.752-.065.202-.175.391-.33.566-.35.394-.795.591-1.335.591-.527 0-.979-.19-1.355-.571-.376-.382-.564-.841-.564-1.377 0-.547.191-1.01.574-1.391.382-.382.848-.574 1.396-.574.295 0 .57.06.825.181.244.12.484.316.72.586l-.405.388c-.309-.412-.686-.618-1.13-.618-.399 0-.733.138-1 .413-.27.27-.405.609-.405 1.015 0 .42.151.766.452 1.037.282.252.587.378.915.378.28 0 .531-.094.754-.283.223-.19.347-.418.373-.683h-.94v-.535m2.884.061c0-.53.194-.986.583-1.367.387-.381.853-.571 1.396-.571.537 0 .998.192 1.382.576.386.384.578.845.578 1.384 0 .542-.194 1-.581 1.379-.389.379-.858.569-1.408.569-.487 0-.923-.168-1.311-.505-.426-.373-.64-.861-.64-1.465m.574.007c0 .417.14.759.42 1.028.278.269.6.403.964.403.395 0 .729-.137 1-.41.272-.277.408-.613.408-1.01 0-.402-.134-.739-.403-1.01-.267-.273-.597-.41-.991-.41-.392 0-.723.137-.993.41-.27.27-.405.604-.405 1m-.184 3.918c.525.026.812.063.812.063.271.025.324-.096.116-.273 0 0-.775-.813-1.933-.813-1.159 0-1.923.813-1.923.813-.211.174-.153.3.12.273 0 0 .286-.037.81-.063v.477c0 .268.224.5.5.5.268 0 .5-.223.5-.498v-.252.25c0 .268.224.5.5.5.268 0 .5-.223.5-.498v-.478m-1-1.023c.552 0 1-.224 1-.5 0-.276-.448-.5-1-.5-.552 0-1 .224-1 .5 0 .276.448.5 1 .5"/></g></svg>
+
+Gitea
+</a></div>
+<div>
+<button class="btn js-toggle-button import_git" type="button">
+<i aria-hidden="true" data-hidden="true" class="fa fa-git"></i> Repo by URL
+</button>
+</div>
+<div class="import_gitlab_project has-tooltip" data-container="body">
+<a class="btn btn_import_gitlab_project project-submit" href="/import/gitlab_project/new"><i aria-hidden="true" data-hidden="true" class="fa fa-gitlab"></i> GitLab export
+</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<div class="js-toggle-content hide">
+<hr>
+<div class="form-group import-url-data">
+<label class="label-light" for="project_import_url"><span>Git repository URL</span>
+</label><input autocomplete="off" class="form-control" placeholder="https://username:password@gitlab.company.com/group/project.git" type="text" value="" name="project[import_url]" id="project_import_url" />
+<div class="well prepend-top-20">
+<ul>
+<li>
+The repository must be accessible over <code>http://</code>, <code>https://</code> or <code>git://</code>.
+</li>
+<li>
+If your HTTP repository is not publicly accessible, add authentication information to the URL: <code>https://username:password@gitlab.company.com/group/project.git</code>.
+</li>
+<li>
+The import will time out after 15 minutes. For repositories that take longer, use a clone/push combination.
+</li>
+<li>
+To migrate an SVN repository, check out <a href="/help/user/project/import/svn">this document</a>.
+</li>
+<li>
+The Git LFS objects will <strong>not</strong> be imported.
+</li>
+<li>
+Once imported, repositories can be mirrored over SSH. Read more
+<a href="/help//workflow/repository_mirroring.md#ssh-authentication">here</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group">
+<label class="label-light" for="project_mirror"><input name="project[mirror]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="project[mirror]" id="project_mirror" />
+<strong>
+Mirror repository
+</strong>
+</label><div class="help-block">
+Automatically update this project's branches and tags from the upstream
+repository every hour. The Git LFS objects will not be synced.
+</div>
+<div class="help-block">
+Mirroring will only be available if the feature is included in the plan of the selected group or user.
+</div>
+</div>
+<input value="1647436" type="hidden" name="project[mirror_user_id]" id="project_mirror_user_id" />
+
+
+</hr>
+</div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="form-group col-xs-12 col-sm-6">
+<label class="label-light" for="project_namespace_id"><span>
+Project path
+</span>
+</label><div class="form-group">
+<div class="input-group">
+<div class="input-group-addon static-namespace">
+https://gitlab.com/dylonrajah/
+</div>
+<input value="2016472" type="hidden" name="project[namespace_id]" id="project_namespace_id" />
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12 col-sm-6 project-path">
+<div class="field_with_errors"><label class="label-light" for="project_path"><span>
+Project name
+</span>
+</label></div><div class="field_with_errors"><input placeholder="my-awesome-project" class="form-control" tabindex="2" autofocus="autofocus" required="required" type="text" value="Lab 2" name="project[path]" id="project_path" /></div>
+</div>
+</div>
+<div class="help-block">
+Want to house several dependent projects under the same namespace?
+<a href="/groups/new">Create a group</a>
+</div>
+<div class="form-group">
+<label class="label-light" for="project_description">Project description
+<span class="light">(optional)</span>
+</label><textarea placeholder="Description format" class="form-control" rows="3" maxlength="250" name="project[description]" id="project_description">
+</textarea>
+</div>
+<div class="form-group visibility-level-setting">
+<label class="label-light" for="project_visibility_level">Visibility Level
+<a aria-label="Documentation for Visibility Level" href="/help/public_access/public_access"><i aria-hidden="true" data-hidden="true" class="fa fa-question-circle"></i></a>
+</label><div class="form-group visibility-level-setting">
+<div class="">
+<div class="radio">
+<label for="project_visibility_level_0"><input type="radio" value="0" checked="checked" name="project[visibility_level]" id="project_visibility_level_0" />
+<i aria-hidden="true" data-hidden="true" class="fa fa-lock fa-fw"></i>
+<div class="option-title">
+Private
+</div>
+<div class="option-description">
+Project access must be granted explicitly to each user.
+</div>
+<div class="option-disabled-reason">
+</div>
+</label></div>
+<div class="radio">
+<label for="project_visibility_level_10"><input type="radio" value="10" name="project[visibility_level]" id="project_visibility_level_10" />
+<i aria-hidden="true" data-hidden="true" class="fa fa-shield fa-fw"></i>
+<div class="option-title">
+Internal
+</div>
+<div class="option-description">
+The project can be accessed by any logged in user.
+</div>
+<div class="option-disabled-reason">
+</div>
+</label></div>
+<div class="radio">
+<label for="project_visibility_level_20"><input type="radio" value="20" name="project[visibility_level]" id="project_visibility_level_20" />
+<i aria-hidden="true" data-hidden="true" class="fa fa-globe fa-fw"></i>
+<div class="option-title">
+Public
+</div>
+<div class="option-description">
+The project can be accessed without any authentication.
+</div>
+<div class="option-disabled-reason">
+</div>
+</label></div>
+
+</div>
+</div>
+
+</div>
+<input type="submit" name="commit" value="Create project" class="btn btn-create project-submit" tabindex="4" />
+<a class="btn btn-cancel" href="/dashboard/projects">Cancel</a>
+</form></div>
+</div>
+</div>
+<div class="save-project-loader hide">
+<div class="center">
+<h2>
+<i class="fa fa-spinner fa-spin"></i>
+Creating project &amp; repository.
+</h2>
+<p>Please wait a moment, this page will automatically refresh when ready.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+$V4ù      YÜë¾YÜë¾>IËÉ       (    ~1507650175,:https://gitlab.com/projects necko:classified 1 strongly-framed 1 security-info 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 request-method POST response-head HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 10 Oct 2017 15:48:14 GMT
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, private, must-revalidate
+Etag: W/"8c00f1c9cbd2af6b52b423a1abfb091c"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: f2a9b48e-90cf-4d2a-81c9-a7be6a8cc05b
+X-Runtime: 0.184012
+X-Ua-Compatible: IE=edge
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Content-Security-Policy: object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gl-static.global.ssl.fastly.net https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' 'unsafe-inline' https://gl-static.global.ssl.fastly.net; img-src * data: blob:; frame-src 'self' https://www.google.com/recaptcha/; frame-ancestors 'self'; connect-src 'self' https://gl-static.global.ssl.fastly.net wss://gitlab.com https://sentry.gitlap.com https://customers.gitlab.com; report-uri https://sentry-infra.gitlap.com/api/3/csp-report/?sentry_key=a664fdde83424b43a991f25fa7c78987
+ original-response-headers Server: nginx
+Date: Tue, 10 Oct 2017 15:48:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Cache-Control: max-age=0, private, must-revalidate
+Etag: W/"8c00f1c9cbd2af6b52b423a1abfb091c"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: f2a9b48e-90cf-4d2a-81c9-a7be6a8cc05b
+X-Runtime: 0.184012
+X-Ua-Compatible: IE=edge
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Content-Security-Policy: object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gl-static.global.ssl.fastly.net https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' 'unsafe-inline' https://gl-static.global.ssl.fastly.net; img-src * data: blob:; frame-src 'self' https://www.google.com/recaptcha/; frame-ancestors 'self'; connect-src 'self' https://gl-static.global.ssl.fastly.net wss://gitlab.com https://sentry.gitlap.com https://customers.gitlab.com; report-uri https://sentry-infra.gitlap.com/api/3/csp-report/?sentry_key=a664fdde83424b43a991f25fa7c78987
+ uncompressed-len 0 net-response-time-onstart 340 net-response-time-onstop 344   ‰º

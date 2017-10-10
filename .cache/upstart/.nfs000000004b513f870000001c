@@ -1,0 +1,20 @@
+
+** (unity-settings-daemon:27771): WARNING **: Disable print plugin under Unity
+
+(unity-settings-daemon:27771): GLib-GObject-WARNING **: /build/glib2.0-prJhLS/glib2.0-2.48.2/./gobject/gtypemodule.c:99: unsolicitated invocation of g_object_run_dispose() on GTypeModule
+
+** (unity-settings-daemon:27771): WARNING **: Error activating plugin 'Print-notifications'
+
+(unity-settings-daemon:27771): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(unity-settings-daemon:27771): GLib-GObject-CRITICAL **: g_signal_handlers_disconnect_matched: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+** (unity-settings-daemon:3983): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-BuwtVagu9M: Connection refused
+
+** (unity-settings-daemon:3983): WARNING **: Disable print plugin under Unity
+
+(unity-settings-daemon:3983): GLib-GObject-WARNING **: /build/glib2.0-prJhLS/glib2.0-2.48.2/./gobject/gtypemodule.c:99: unsolicitated invocation of g_object_run_dispose() on GTypeModule
+
+** (unity-settings-daemon:3983): WARNING **: Error activating plugin 'Print-notifications'
+
+** (unity-settings-daemon:3983): WARNING **: Unable to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files

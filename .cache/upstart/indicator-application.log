@@ -1,0 +1,4 @@
+
+(process:27864): indicator-application-service-CRITICAL **: Could not grab DBus properties for :1.88: The connection is closed
+
+(process:27864): indicator-application-service-WARNING **: Name Lost

@@ -1,0 +1,4 @@
+
+** (bamfdaemon:27646): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-oEsJBf9Zc3: Connection refused
+
+** (bamfdaemon:3967): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-BuwtVagu9M: Connection refused

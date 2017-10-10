@@ -1,0 +1,312 @@
+<article id="152272" data-url="http://www.dummies.com/programming/java/java-keywords/" class="article-trigger  "  ><div ID="ISBN" class="hide" data-ISBN ="1119235537"></div>
+ <script>googletag.cmd.push(function() { googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.pubads().setTargeting('isbn', "1119235537");
+googletag.enableServices(); });
+ </script><!--Teads InRead ads -->
+<div id="dummies_article_page_one_by_one_2">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_one_by_one0 = googletag.defineSlot('/21618997260/dummiessite/article_page_one_by_one', [1, 1], 
+'dummies_article_page_one_by_one_2').addService(googletag.pubads());
+      googletag.display('dummies_article_page_one_by_one_2');
+      googletag.pubads().refresh([article_page_one_by_one0]);
+    });
+  </script>
+</div><ol class="breadcrumb"><li><a href="http://www.dummies.com"><span class="fa fa-home"></span></a></li><li><a href="http://www.dummies.com/programming/">Programming</a></li><li><a href="http://www.dummies.com/programming/java/">Java</a></li><li class="active">Java Keywords</li></ol><div class="row">
+                                <div class="col-sm-7 article-title">
+                                    <h1>Java Keywords</h1>
+                                </div>
+                                <div class="col-sm-5"><section class="related-book small">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a target="_blank" href="http://www.dummies.com/store/product/Beginning-Programming-with-Java-For-Dummies-5th-Edition.productCd-1119235537.html#">
+                                    <img width="84" height="105" src="http://www.dummies.com/wp-content/uploads/1119235537-84x105.jpg" class="book-img" alt="Beginning Programming with Java For Dummies, 5th Edition" />
+                                    <p class="pre-header">Related Book</p>
+                                    <h2>Beginning Programming with Java For Dummies, 5th Edition</h2>
+                                    </a>        </div>
+                            </div>
+                        </section> </div>
+                            </div><p class="author">By  <a href="http://www.dummies.com/?s=&a=barry-burd">Barry Burd </a> </p><p class="author">Part of   <a href="http://www.dummies.com/programming/java/beginning-programming-with-java-for-dummies-cheat-sheet/">Beginning Programming with Java For Dummies Cheat Sheet </a> </p><p>The Java programming language has 50 <em>keywords</em>. Each keyword has a specific meaning in the language. You can&#8217;t use a keyword for anything other than its pre-assigned meaning.</p>
+<p>The following table lists Java&#8217;s keywords.</p>
+<table>
+<tbody>
+<tr>
+<td width="315"><strong>Keyword</strong></td>
+<td width="263"><strong>What It Does</strong></td>
+</tr>
+<tr>
+<td width="315"><code>abstract</code></td>
+<td width="263">Indicates that the details of a class, a method, or an interface are given elsewhere in the code.</td>
+</tr>
+<tr>
+<td width="315"><code>assert</code></td>
+<td width="263">Tests the truth of a condition that the programmer believes is true.</td>
+</tr>
+<tr>
+<td width="315"><code>boolean</code></td>
+<td width="263">Indicates that a value is either <code>true </code>or <code>false</code>.</td>
+</tr>
+<tr>
+<td width="315"><code>break</code></td>
+<td width="263">Jumps out of a loop or <code>switch</code>.</td>
+</tr>
+<tr>
+<td width="315"><code>byte</code></td>
+<td width="263">Indicates that a value is an 8-bit whole number.</td>
+</tr>
+<tr>
+<td width="315"><code>case</code></td>
+<td width="263">Introduces one of several possible paths of execution in a <code>switch </code>statement.</td>
+</tr>
+<tr>
+<td width="315"><code>catch</code></td>
+<td width="263">Introduces statements that are executed when something interrupts the flow of execution in a <code>try </code>clause.</td>
+</tr>
+<tr>
+<td width="315"><code>char</code></td>
+<td width="263">Indicates that a value is a character (a single letter, digit, punctuation symbol, and so on) stored in 16 bits of memory.</td>
+</tr>
+<tr>
+<td width="315"><code>class</code></td>
+<td width="263">Introduces a class â€” a blueprint for an object.</td>
+</tr>
+<tr>
+<td width="315"><code>const</code></td>
+<td width="263">You can&#8217;t use this word in a Java program. The word has no meaning but, because it&#8217;s a keyword, you can&#8217;t create a variable named const.</td>
+</tr>
+<tr>
+<td width="315"><code>continue</code></td>
+<td width="263">Forces the abrupt end of the current loop iteration and begins another iteration.</td>
+</tr>
+<tr>
+<td width="315"><code>default</code></td>
+<td width="263">Introduces a path of execution to take when no case is a match in a <code>switch </code>statement.</td>
+</tr>
+<tr>
+<td width="315"><code>do</code></td>
+<td width="263">Causes the computer to repeat some statements over and over again (for instance, as long as the computer keeps getting unacceptable results).</td>
+</tr>
+<tr>
+<td width="315"><code>double</code></td>
+<td width="263">Indicates that a value is a 64-bit number with one or more digits after the decimal point.</td>
+</tr>
+<tr>
+<td width="315"><code>else</code></td>
+<td width="263">Introduces statements that are executed when the condition in an <code>if</code> statement isn&#8217;t true.</td>
+</tr>
+<tr>
+<td width="315"><code>enum</code></td>
+<td width="263">Creates a newly defined type â€” a group of values that a variable can have.</td>
+</tr>
+<tr>
+<td width="315"><code>extends</code></td>
+<td width="263">Creates a subclass â€” a class that reuses functionality from a previously defined class.</td>
+</tr>
+<tr>
+<td width="315"><code>final</code></td>
+<td width="263">Indicates that a variable&#8217;s value cannot be changed, that a class&#8217;s functionality cannot be extended, or that a method cannot be overridden.</td>
+</tr>
+<tr>
+<td width="315"><code>finally</code></td>
+<td width="263">Introduces the last will and testament of the statements in a <code>try</code> clause.</td>
+</tr>
+<tr>
+<td width="315"><code>float</code></td>
+<td width="263">Indicates that a value is a 32-bit number with one or more digits after the decimal point.</td>
+</tr>
+<tr>
+<td width="315"><code>for</code></td>
+<td width="263">Gets the computer to repeat some statements over and over again (for instance, a certain number of times).</td>
+</tr>
+<tr>
+<td width="315"><code>goto</code></td>
+<td width="263">You can&#8217;t use this word in a Java program. The word has no meaning. Because it&#8217;s a keyword, you can&#8217;t create a variable named <code>goto</code>.</td>
+</tr>
+<tr>
+<td width="315"><code>if</code></td>
+<td width="263">Tests to see whether a condition is true. If it&#8217;s true, the computer executes certain statements; otherwise, the computer executes other statements.</td>
+</tr>
+<tr>
+<td width="315"><code>implements</code></td>
+<td width="263">Indicates that a class provides bodies for methods whose headers are declared in an interface.</td>
+</tr>
+<tr>
+<td width="315"><code>import</code></td>
+<td width="263">Enables the programmer to abbreviate the names of classes defined in a package.</td>
+</tr>
+<tr>
+<td width="315"><code>instanceof</code></td>
+<td width="263">Tests to see whether a certain object comes from a certain class.</td>
+</tr>
+<tr>
+<td width="315"><code>int</code></td>
+<td width="263">Indicates that a value is a 32-bit whole number.</td>
+</tr>
+<tr>
+<td width="315"><code>interface</code></td>
+<td width="263">Introduces an interface. An interface is like a class but, for the most part, an interface&#8217;s methods have no bodies.</td>
+</tr>
+<tr>
+<td width="315"><code>long</code></td>
+<td width="263">Indicates that a value is a 64-bit whole number.</td>
+</tr>
+<tr>
+<td width="315"><code>native</code></td>
+<td width="263">Enables the programmer to use code that was written in a language other than Java.</td>
+</tr>
+<tr>
+<td width="315"><code>new</code></td>
+<td width="263">Creates an object from an existing class.</td>
+</tr>
+<tr>
+<td width="315"><code>package</code></td>
+<td width="263">Puts the code into a package â€” a collection of logically related definitions.</td>
+</tr>
+<tr>
+<td width="315"><code>private</code></td>
+<td width="263">Indicates that a variable or method can be used only within a certain class.</td>
+</tr>
+<tr>
+<td width="315"><code>protected</code></td>
+<td width="263">Indicates that a variable or method can be used in subclasses from another package.</td>
+</tr>
+<tr>
+<td width="315"><code>public</code></td>
+<td width="263">Indicates that a variable, class, or method can be used by any other Java code.</td>
+</tr>
+<tr>
+<td width="315"><code>return</code></td>
+<td width="263">Ends execution of a method and possibly returns a value to the calling code.</td>
+</tr>
+<tr>
+<td width="315"><code>short</code></td>
+<td width="263">Indicates that a value is a 16-bit whole number.</td>
+</tr>
+<tr>
+<td width="315"><code>static</code></td>
+<td width="263">Indicates that a variable or method belongs to a class, rather than to any object created from the class.</td>
+</tr>
+<tr>
+<td width="315"><code>strictfp</code></td>
+<td width="263">Limits the computer&#8217;s ability to represent extra large or extra small numbers when the computer does intermediate calculations on <code>float </code>and <code>double</code> values.</td>
+</tr>
+<tr>
+<td width="315"><code>super</code></td>
+<td width="263">Refers to the superclass of the code in which the word <code>super</code> appears.</td>
+</tr>
+<tr>
+<td width="315"><code>switch</code></td>
+<td width="263">Tells the computer to follow one of many possible paths of execution (one of many possible cases), depending on the value of an expression.</td>
+</tr>
+<tr>
+<td width="315"><code>synchronized</code></td>
+<td width="263">Keeps two threads from interfering with one another.</td>
+</tr>
+<tr>
+<td width="315"><code>this</code></td>
+<td width="263">A self-reference â€” refers to the object in which the word <code>this</code> appears.</td>
+</tr>
+<tr>
+<td width="315"><code>throw</code></td>
+<td width="263">Creates a new exception object and indicates that an exceptional situation (usually something unwanted) has occurred.</td>
+</tr>
+<tr>
+<td width="315"><code>throws</code></td>
+<td width="263">Indicates that a method or constructor may pass the buck when an exception is thrown.</td>
+</tr>
+<tr>
+<td width="315"><code>transient</code></td>
+<td width="263">Indicates that, if and when an object is serialized, a variable&#8217;s value doesn&#8217;t need to be stored.</td>
+</tr>
+<tr>
+<td width="315"><code>try</code></td>
+<td width="263">Introduces statements that are watched (during runtime) for things that can go wrong.</td>
+</tr>
+<tr>
+<td width="315"><code>void</code></td>
+<td width="263">Indicates that a method doesn&#8217;t return a value.</td>
+</tr>
+<tr>
+<td width="315"><code>volatile</code></td>
+<td width="263">Imposes strict rules on the use of a variable by more than one thread at a time.</td>
+</tr>
+<tr>
+<td width="315"><code>while</code></td>
+<td width="263">Repeats some statements over and over again (as long as a condition is still true).</td>
+</tr>
+</tbody>
+</table>
+<div class='ad x2'>
+<div id="dummies_article_page_content_ad_2" data-dumm-ad-cb="dummies_article_page_content_ad_2">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_content_ad_mapping = googletag.sizeMapping().addSize([1050, 200], [728, 90]).addSize([800, 480], [[300, 250],[468, 60]]).addSize([745, 480], [[300, 250],[468, 60]]).addSize([0, 0], []).build();
+var article_page_content_ad0 = googletag.defineSlot('/21618997260/dummiessite/article_page_content_ad', [300, 250], 'dummies_article_page_content_ad_2').defineSizeMapping(article_page_content_ad_mapping).addService(googletag.pubads());
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+ googletag.display('dummies_article_page_content_ad_2');
+      article_page_content_ad_arr.push(article_page_content_ad0);
+    });
+  </script>
+</div>
+</div>
+<div class="sharing-tools-xs visible-xs x2-top text-center">
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-568a36f979993447"></script>
+                            <div class="addthis_sharing_toolbox"></div>
+                        </div><div class="article-separator"></div><section class="ads">
+                            <div class="row">
+                                <div class="col-sm-12"><div id="dummies_article_page_content_bottom_ad_one_2">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_content_bottom_ad_one_mapping = googletag.sizeMapping().addSize([0, 0], [300, 250]).build();
+var article_page_content_bottom_ad_one0 = googletag.defineSlot('/21618997260/dummiessite/article_page_content_bottom_ad_one', [300, 250], 'dummies_article_page_content_bottom_ad_one_2').defineSizeMapping(article_page_content_bottom_ad_one_mapping).addService(googletag.pubads());
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.pubads().setTargeting('isbn', "1119235537");
+googletag.display('dummies_article_page_content_bottom_ad_one_2');
+
+      article_page_content_bottom_ad_one_arr.push(article_page_content_bottom_ad_one0);
+    });
+  </script>
+</div><div id="dummies_article_page_content_bottom_ad_two_2">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_content_bottom_ad_two_mapping = googletag.sizeMapping().addSize([1050, 200], [300, 250]).addSize([0, 0], []).build();
+var article_page_content_bottom_ad_two0 = googletag.defineSlot('/21618997260/dummiessite/article_page_content_bottom_ad_two', [300, 250], 
+'dummies_article_page_content_bottom_ad_two_2').defineSizeMapping(article_page_content_bottom_ad_two_mapping).addService(googletag.pubads());
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.pubads().setTargeting('isbn', "1119235537");
+googletag.display('dummies_article_page_content_bottom_ad_two_2');
+
+      article_page_content_bottom_ad_two_arr.push(article_page_content_bottom_ad_two0);
+    });
+  </script>
+</div>         </div>
+                            </div>
+                        </section><section id="promoted-stories" class="article-recommendations">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                </div>
+                            </div>
+                        </section>V.(oß      YÓ¸ÿYÓ¸ÿ>Ck™YÓÇ   ^    :http://www.dummies.com/programming/java/how-statements-are-used-in-java/?nid=152272&adAfter=2 necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Cache-Control: max-age=3600
+Date: Tue, 03 Oct 2017 16:21:19 GMT
+Expires: Tue, 03 Oct 2017 17:21:19 GMT
+Link: <http://www.dummies.com/?p=172140>; rel=shortlink
+Server: Apache
+X-Pingback: http://www.dummies.com/xmlrpc.php
+X-Cache: Miss from cloudfront
+Via: 1.1 5ecfd97124a5b15f1245ab731d34efe7.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: qebL8rNvXH1c9Ojk70fDib3ezEezvKv4yfk_Do1YsMnPyRxjjlsGYg==
+ original-response-headers Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: max-age=3600
+Date: Tue, 03 Oct 2017 16:21:19 GMT
+Expires: Tue, 03 Oct 2017 17:21:19 GMT
+Link: <http://www.dummies.com/?p=172140>; rel=shortlink
+Server: Apache
+X-Pingback: http://www.dummies.com/xmlrpc.php
+X-Cache: Miss from cloudfront
+Via: 1.1 5ecfd97124a5b15f1245ab731d34efe7.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: qebL8rNvXH1c9Ojk70fDib3ezEezvKv4yfk_Do1YsMnPyRxjjlsGYg==
+ uncompressed-len 0 net-response-time-onstart 403 net-response-time-onstop 462   9

@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>DocViewer</title>
+  <script src="//d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/css.2845437917bfc2f553ad.bundle.js"></script>
+  <script>
+    window.DocViewer = {
+      cdnPrefix: function () { return "//d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/" },
+      sessionData: {"document_id":"Ij0e2SXc3weq298cZKrPBUHR80ANgb","urls":{"pdf_download":"/1/sessions/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjIjoxNTA3NjUxMzk4NzUyLCJkIjoiSWowZTJTWGMzd2VxMjk4Y1pLclBCVUhSODBBTmdiIiwiZSI6MTUwNzY4NzM5OCwiciI6InBkZmpzIiwiaWF0IjoxNTA3NjUxMzk4LCJleHAiOjE1MDc2ODczOTd9.1oIZQj5FMbQfA09H_sqyNU4NN8b7ZXykzpnEWzXMc2w/file/file.pdf"},"panda_push":{"host":"https://pandapush-iad-prod.inscloudgate.net:443/push","document_channel":"/xwRavsOlvL4tUHkBfZYS/private/documents/Ij0e2SXc3weq298cZKrPBUHR80ANgb/update","document_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlJZCI6IlBTSURTNmVRRHM2WTlyUnNPSms2IiwiY2hhbm5lbCI6Ii94d1JhdnNPbHZMNHRVSGtCZlpZUy9wcml2YXRlL2RvY3VtZW50cy9JajBlMlNYYzN3ZXEyOThjWktyUEJVSFI4MEFOZ2IvdXBkYXRlIiwicHViIjpmYWxzZSwic3ViIjp0cnVlLCJleHAiOjE1MDc3Mzc3OTksImlhdCI6MTUwNzY1MTM5OX0.kZPW8RJyYnxRK_My23nmyt-l0bhHiLIXEXmEUu5P81k"},"viewer":"pdfjs","pdfjs":{"documentName":"0%20Syllabus.pdf","url":"/1/sessions/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjIjoxNTA3NjUxMzk4NzUyLCJkIjoiSWowZTJTWGMzd2VxMjk4Y1pLclBCVUhSODBBTmdiIiwiZSI6MTUwNzY4NzM5OCwiciI6InBkZmpzIiwiaWF0IjoxNTA3NjUxMzk4LCJleHAiOjE1MDc2ODczOTd9.1oIZQj5FMbQfA09H_sqyNU4NN8b7ZXykzpnEWzXMc2w/file/file.pdf","annotatedPdfUrl":"undefined?dl=1"}},
+      bundleManifest: {"2.4d4f51af278999ec27b4.bundle.js":"2.4d4f51af278999ec27b4.bundle.js","2.4d4f51af278999ec27b4.bundle.js.map":"2.4d4f51af278999ec27b4.bundle.js.map","35.6ac9598ed3c0ba078e8c.bundle.js":"35.6ac9598ed3c0ba078e8c.bundle.js","35.6ac9598ed3c0ba078e8c.bundle.js.map":"35.6ac9598ed3c0ba078e8c.bundle.js.map","css.js":"css.2845437917bfc2f553ad.bundle.js","css.js.map":"css.2845437917bfc2f553ad.bundle.js.map","i18n-translationsjson_ar-json.js":"33.b5048960758360e6a5f7.bundle.js","i18n-translationsjson_ar-json.js.map":"i18n-translationsjson_ar-json.b5048960758360e6a5f7.bundle.js.map","i18n-translationsjson_da-json.js":"32.66acb829845985fca31e.bundle.js","i18n-translationsjson_da-json.js.map":"i18n-translationsjson_da-json.66acb829845985fca31e.bundle.js.map","i18n-translationsjson_de-json.js":"31.c4e682ae8f913892f818.bundle.js","i18n-translationsjson_de-json.js.map":"i18n-translationsjson_de-json.c4e682ae8f913892f818.bundle.js.map","i18n-translationsjson_el-json.js":"30.3097a8b2ac15ddbb1ceb.bundle.js","i18n-translationsjson_el-json.js.map":"i18n-translationsjson_el-json.3097a8b2ac15ddbb1ceb.bundle.js.map","i18n-translationsjson_en-json.js":"29.4f3f89a35d2294a8d33f.bundle.js","i18n-translationsjson_en-json.js.map":"i18n-translationsjson_en-json.4f3f89a35d2294a8d33f.bundle.js.map","i18n-translationsjson_en_AU-json.js":"28.32cea51bede5210f1606.bundle.js","i18n-translationsjson_en_AU-json.js.map":"i18n-translationsjson_en_AU-json.32cea51bede5210f1606.bundle.js.map","i18n-translationsjson_en_GB-json.js":"27.8006d1d07c93782a0aa3.bundle.js","i18n-translationsjson_en_GB-json.js.map":"i18n-translationsjson_en_GB-json.8006d1d07c93782a0aa3.bundle.js.map","i18n-translationsjson_es-json.js":"26.c2b179f71a9c2d7d218b.bundle.js","i18n-translationsjson_es-json.js.map":"i18n-translationsjson_es-json.c2b179f71a9c2d7d218b.bundle.js.map","i18n-translationsjson_fa_IR-json.js":"25.6d577a24f39a2384bbd2.bundle.js","i18n-translationsjson_fa_IR-json.js.map":"i18n-translationsjson_fa_IR-json.6d577a24f39a2384bbd2.bundle.js.map","i18n-translationsjson_fr-json.js":"24.b05f70055dbc987aac10.bundle.js","i18n-translationsjson_fr-json.js.map":"i18n-translationsjson_fr-json.b05f70055dbc987aac10.bundle.js.map","i18n-translationsjson_fr_CA-json.js":"23.a321c4c7b9354868fc9d.bundle.js","i18n-translationsjson_fr_CA-json.js.map":"i18n-translationsjson_fr_CA-json.a321c4c7b9354868fc9d.bundle.js.map","i18n-translationsjson_he-json.js":"22.de5c1f7692962c7a37cc.bundle.js","i18n-translationsjson_he-json.js.map":"i18n-translationsjson_he-json.de5c1f7692962c7a37cc.bundle.js.map","i18n-translationsjson_ht-json.js":"21.c769f1e624f2f0db36e6.bundle.js","i18n-translationsjson_ht-json.js.map":"i18n-translationsjson_ht-json.c769f1e624f2f0db36e6.bundle.js.map","i18n-translationsjson_hu-json.js":"20.aa101d6a977bccf52177.bundle.js","i18n-translationsjson_hu-json.js.map":"i18n-translationsjson_hu-json.aa101d6a977bccf52177.bundle.js.map","i18n-translationsjson_hy-json.js":"19.260560e86a00c9432207.bundle.js","i18n-translationsjson_hy-json.js.map":"i18n-translationsjson_hy-json.260560e86a00c9432207.bundle.js.map","i18n-translationsjson_it-json.js":"18.219f30c109bfca852359.bundle.js","i18n-translationsjson_it-json.js.map":"i18n-translationsjson_it-json.219f30c109bfca852359.bundle.js.map","i18n-translationsjson_ja-json.js":"17.f93cb9f8809f983dbb3b.bundle.js","i18n-translationsjson_ja-json.js.map":"i18n-translationsjson_ja-json.f93cb9f8809f983dbb3b.bundle.js.map","i18n-translationsjson_ko-json.js":"16.4ce11fc2e91ffe883194.bundle.js","i18n-translationsjson_ko-json.js.map":"i18n-translationsjson_ko-json.4ce11fc2e91ffe883194.bundle.js.map","i18n-translationsjson_mi-json.js":"15.03232c2d746a74f4b731.bundle.js","i18n-translationsjson_mi-json.js.map":"i18n-translationsjson_mi-json.03232c2d746a74f4b731.bundle.js.map","i18n-translationsjson_nb_NO-json.js":"14.cfb3e2ce727c3f834d18.bundle.js","i18n-translationsjson_nb_NO-json.js.map":"i18n-translationsjson_nb_NO-json.cfb3e2ce727c3f834d18.bundle.js.map","i18n-translationsjson_nl-json.js":"13.eac51db6be8e50c111db.bundle.js","i18n-translationsjson_nl-json.js.map":"i18n-translationsjson_nl-json.eac51db6be8e50c111db.bundle.js.map","i18n-translationsjson_nn-json.js":"12.440c21d9dfbc091f5ef4.bundle.js","i18n-translationsjson_nn-json.js.map":"i18n-translationsjson_nn-json.440c21d9dfbc091f5ef4.bundle.js.map","i18n-translationsjson_pl-json.js":"11.c92edf3199a1fe7975a1.bundle.js","i18n-translationsjson_pl-json.js.map":"i18n-translationsjson_pl-json.c92edf3199a1fe7975a1.bundle.js.map","i18n-translationsjson_pt-json.js":"10.ccb35aa94359d96ec2e3.bundle.js","i18n-translationsjson_pt-json.js.map":"i18n-translationsjson_pt-json.ccb35aa94359d96ec2e3.bundle.js.map","i18n-translationsjson_pt_BR-json.js":"9.be1dab6727d5ef9d02a3.bundle.js","i18n-translationsjson_pt_BR-json.js.map":"i18n-translationsjson_pt_BR-json.be1dab6727d5ef9d02a3.bundle.js.map","i18n-translationsjson_ru-json.js":"8.81d1306ba2d4b5826909.bundle.js","i18n-translationsjson_ru-json.js.map":"i18n-translationsjson_ru-json.81d1306ba2d4b5826909.bundle.js.map","i18n-translationsjson_sv-json.js":"7.03b578637388956f4cba.bundle.js","i18n-translationsjson_sv-json.js.map":"i18n-translationsjson_sv-json.03b578637388956f4cba.bundle.js.map","i18n-translationsjson_tr-json.js":"6.8a7d4da351b9caf644d2.bundle.js","i18n-translationsjson_tr-json.js.map":"i18n-translationsjson_tr-json.8a7d4da351b9caf644d2.bundle.js.map","i18n-translationsjson_uk_UA-json.js":"5.c5948045e2a7dbb61b98.bundle.js","i18n-translationsjson_uk_UA-json.js.map":"i18n-translationsjson_uk_UA-json.c5948045e2a7dbb61b98.bundle.js.map","i18n-translationsjson_zh-json.js":"4.21a2c00339869a4dddba.bundle.js","i18n-translationsjson_zh-json.js.map":"i18n-translationsjson_zh-json.21a2c00339869a4dddba.bundle.js.map","i18n-translationsjson_zh_HK-json.js":"3.386bd0ab798836e853aa.bundle.js","i18n-translationsjson_zh_HK-json.js.map":"i18n-translationsjson_zh_HK-json.386bd0ab798836e853aa.bundle.js.map","main.js":"main.89efc2faeabeaaef4944.bundle.js","main.js.map":"main.89efc2faeabeaaef4944.bundle.js.map","pdf.worker.js":"pdf.worker.a27096c9e3bce0d5d73c.bundle.js","pdf.worker.js.map":"pdf.worker.a27096c9e3bce0d5d73c.bundle.js.map","pdfjs.js":"1.45aee187ea09d274f288.bundle.js","pdfjs.js.map":"pdfjs.45aee187ea09d274f288.bundle.js.map","pdfjs_viewer.js":"0.c7140761d69176810e5b.bundle.js","pdfjs_viewer.js.map":"pdfjs_viewer.c7140761d69176810e5b.bundle.js.map","raven.js":"raven.ba922bbc1ffb6dbaa413.bundle.js","raven.js.map":"raven.ba922bbc1ffb6dbaa413.bundle.js.map"},
+      ravenDsn: "https://0b208e0e232e4ec08925525b51e2ea13@sentry.insops.net/150",
+      ravenConfig: {"release":"jenkins/2017-10-02-200426-9bf821e534","environment":"prod-iad","tags":{"pool":"web"}}
+    }
+  </script>
+  <script src="//d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/raven.ba922bbc1ffb6dbaa413.bundle.js" defer></script>
+
+  
+    <script src="https://pandapush-iad-prod.inscloudgate.net:443/push/client.js" defer></script>
+  
+  <script src="//d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/main.89efc2faeabeaaef4944.bundle.js" defer></script>
+
+  
+    <link rel="preload" href="/1/sessions/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjIjoxNTA3NjUxMzk4NzUyLCJkIjoiSWowZTJTWGMzd2VxMjk4Y1pLclBCVUhSODBBTmdiIiwiZSI6MTUwNzY4NzM5OCwiciI6InBkZmpzIiwiaWF0IjoxNTA3NjUxMzk4LCJleHAiOjE1MDc2ODczOTd9.1oIZQj5FMbQfA09H_sqyNU4NN8b7ZXykzpnEWzXMc2w/file/file.pdf">
+    <link rel="preload" as="script" href="//d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/pdf.worker.a27096c9e3bce0d5d73c.bundle.js">
+    
+      <link rel="preload" as="script" href="//d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/1.45aee187ea09d274f288.bundle.js">
+    
+    
+      <link rel="preload" as="script" href="//d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/0.c7140761d69176810e5b.bundle.js">
+    
+  
+</head>
+
+<body>
+  <div id="App">
+    <div id="loading-container">
+      <div class="absolute-center">
+        <div
+          size="medium"
+          title="Loading"
+          class="InstUISpinner InstUISpinner--medium"
+        >
+          <svg
+            class="InstUISpinner-svg"
+            role="img"
+            aria-labelledby="InstUISpinner-5otot"
+            focusable="false"
+          >
+            <title id="InstUISpinner-5otot">Loading</title>
+            <g role="presentation">
+              <circle class="InstUISpinner-circleShadow" cx="50%" cy="50%" r="1.75em" />
+              <circle class="InstUISpinner-circleTrack" cx="50%" cy="50%" r="1.75em" />
+              <circle class="InstUISpinner-circleSpin" cx="50%" cy="50%" r="1.75em" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="/vendor/pdf_viewer.css">
+  
+  <script>
+  // PENDO analytics
+  (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+  v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+  o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+  y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/04bb0ed6-a3ce-4244-767f-38de83031b41/pendo.js';
+  z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+  let po = {
+    apiKey: '04bb0ed6-a3ce-4244-767f-38de83031b41',
+  }
+  if (DocViewer.sessionData && DocViewer.sessionData.annotations) {
+    po.visitor = {
+      id: DocViewer.sessionData.annotations.user_id
+    }
+  }
+  window.pendo.initialize(po)
+  // PENDO analytics
+  </script>
+  
+</body>
+</html>
+3z•XÅö      YÜïFYÜïG>IÎ<      +    :https://canvadocs.instructure.com/1/sessions/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjIjoxNTA3NjUxMzk4NzUyLCJkIjoiSWowZTJTWGMzd2VxMjk4Y1pLclBCVUhSODBBTmdiIiwiZSI6MTUwNzY4NzM5OCwiciI6InBkZmpzIiwiaWF0IjoxNTA3NjUxMzk4LCJleHAiOjE1MDc2ODczOTd9.1oIZQj5FMbQfA09H_sqyNU4NN8b7ZXykzpnEWzXMc2w/view?theme=dark necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2.0 200 OK
+date: Tue, 10 Oct 2017 16:03:19 GMT
+content-type: text/html; charset=utf-8
+content-length: 11323
+status: 200 OK
+etag: W/"2c3b-ohQ2kcoEclQlSrimYtUq7JkXurk"
+x-request-id: 816cdaeba48f4ff283a9adf3d4645378
+server: nginx + Phusion Passenger
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 10 Oct 2017 16:03:19 GMT
+content-type: text/html; charset=utf-8
+content-length: 11323
+status: 200 OK
+etag: W/"2c3b-ohQ2kcoEclQlSrimYtUq7JkXurk"
+x-request-id: 816cdaeba48f4ff283a9adf3d4645378
+set-cookie: sid=s%3Aj%3A%7B%7D.0tyqS64lZhZcq%2BMcXtx4vEnbQPYfQIWtqwh0OOiSHz4; Path=/
+server: nginx + Phusion Passenger
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ uncompressed-len 0 predictor::resource-count 9 predictor::https://d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/css.2845437917bfc2f553ad.bundle.js 1,1,1507651398,4096 net-response-time-onstart 249 net-response-time-onstop 293 predictor::https://d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/raven.ba922bbc1ffb6dbaa413.bundle.js 1,1,1507651398,4096 predictor::https://pandapush-iad-prod.inscloudgate.net/push/client.js 1,1,1507651398,4096 predictor::https://d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/main.89efc2faeabeaaef4944.bundle.js 1,1,1507651398,4096 predictor::https://canvadocs.instructure.com/vendor/pdf_viewer.css 1,1,1507651398,4096 predictor::https://cdn.pendo.io/agent/static/04bb0ed6-a3ce-4244-767f-38de83031b41/pendo.js 1,1,1507651398,4096 predictor::https://d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/29.4f3f89a35d2294a8d33f.bundle.js 1,1,1507651398,4096 predictor::https://d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/1.45aee187ea09d274f288.bundle.js 1,1,1507651398,4096 predictor::https://d3qz995is0z3gl.cloudfront.net/jenkins/2017-10-02-200426-9bf821e534/0.c7140761d69176810e5b.bundle.js 1,1,1507651398,4096   ,;

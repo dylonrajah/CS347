@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Git - CS Support</title>
+<meta name="generator" content="MediaWiki 1.25.2" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="CS Support (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://support.cs.wwu.edu/api.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="/index.php/Git" />
+<link rel="alternate" type="application/atom+xml" title="CS Support Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://support.cs.wwu.edu/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: support:resourceloader:filter:minify-css:7:b7425572cddd157c1afe6f530d610cd5 */</style>
+<script src="https://support.cs.wwu.edu/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Git","wgTitle":"Git","wgCurRevisionId":612,"wgRevisionId":612,"wgArticleId":60,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Git","wgRelevantArticleId":60,"wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"publish":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});
+/* cache key: support:resourceloader:filter:minify-js:7:a5c52c063dc436c1ca7c9f456936a5e9 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Git skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Git</h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From CS Support</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Git"><span class="tocnumber">1</span> <span class="toctext">Git</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#What_is_Git.3F"><span class="tocnumber">1.1</span> <span class="toctext">What is Git?</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#One-Time_Git_Setup"><span class="tocnumber">1.2</span> <span class="toctext">One-Time Git Setup</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Using_Git"><span class="tocnumber">1.3</span> <span class="toctext">Using Git</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Git_Terminology"><span class="tocnumber">1.3.1</span> <span class="toctext">Git Terminology</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Repo_Setup"><span class="tocnumber">1.3.2</span> <span class="toctext">Repo Setup</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Individual_Work_Flow"><span class="tocnumber">1.3.3</span> <span class="toctext">Individual Work Flow</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Conventions_on_Commit"><span class="tocnumber">1.3.4</span> <span class="toctext">Conventions on Commit</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Group_Work_and_Version_Control"><span class="tocnumber">1.3.5</span> <span class="toctext">Group Work and Version Control</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Branch_Names"><span class="tocnumber">1.3.6</span> <span class="toctext">Branch Names</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#GitLab_vs._Github"><span class="tocnumber">1.4</span> <span class="toctext">GitLab vs. Github</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#A_thank_you"><span class="tocnumber">1.5</span> <span class="toctext">A thank you</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Git">Git</span></h1>
+<h2><span class="mw-headline" id="What_is_Git.3F">What is Git?</span></h2>
+<p>The modern de facto standard in version control is Git. Version control software allows you to manage and track changes to files over time in a project.  It is especially beneficial for keeping track of source code as it is being developed and debugged.  You may not use it in all of your classes but it is extremely helpful to use for many reasons:
+</p>
+<ul><li> If you properly version your software, it is much easier to undo mistakes. For example, reverting to an earlier version of the code before you implemented a feature that introduced a bug, or restoring the files you just accidentally deleted.  You can also view differences between different versions of the code, so if you do introduce a bug, you can more easily identify what change caused it.</li>
+<li> It makes it simple to transfer your code to your instructor.  If you need feedback during office hours, instructors can simply pull up the most recent version of your code from your project repository.  Similarly, when it is due, your professor or TA can just grade the latest version of your code.</li>
+<li> Version control is great and important technology to be familiar with.  You'll almost certainly use it later in the major and in your career.  Why not get a head start?</li></ul>
+<p>In the Computer Science department, we use <code>git</code> for version control.  This page will introduce you to the basic functionality of <code>git</code>.
+</p>
+<h2><span class="mw-headline" id="One-Time_Git_Setup">One-Time Git Setup</span></h2>
+<p>One time only, before you use <code>git</code> the first time, you need to tell it a little bit about yourself and your account. This configures <code>git</code> to know you are part of the department's GitLab. Run the following commands in your terminal, supplying your full name and email address:
+</p>
+<pre>git config --global user.name "${your name}"
+</pre>
+<pre>git config --global user.email ${username}@wwu.edu
+</pre>
+<p>If you'll recall from previous pages, SSH allows you to remotely connect to another machine using your account on that computer (if you haven't gotten there, please read <a href="/index.php/Getting_Around_the_Command_Line#SSH" title="Getting Around the Command Line"> this page</a>). In this case, <code>git</code> uses the SSH connection to interact with your remote repository. As noted in the SSH page, you should <b>never give out your private key to anybody</b>. That is yours and yours alone. You will, however, need to give GitLab your public SSH key. You can add your public key in your user settings on GitLab by accessing the <code>SSH Keys</code> tab on your profile and copy the public portion of your key into the text box.
+</p><p><a href="/index.php/File:Gitsshkeys.png" class="image"><img alt="Gitsshkeys.png" src="/images/thumb/b/be/Gitsshkeys.png/800px-Gitsshkeys.png" width="800" height="335" srcset="/images/thumb/b/be/Gitsshkeys.png/1200px-Gitsshkeys.png 1.5x, /images/b/be/Gitsshkeys.png 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="Using_Git">Using Git</span></h2>
+<h3><span class="mw-headline" id="Git_Terminology">Git Terminology</span></h3>
+<p>The setup you will most likely encounter throughout the major will include three main components:
+</p>
+<ol><li> <b>the main or remote repository</b> - The online master copy of your code repository.  If you use <code>git</code> properly, it will contain a record of all versions of your code as you develop it. This is the location instructors go to find your current code during office hours and for grading.</li>
+<li> <b>the local working copy</b> - The current version of files you are editing stored on a local machine.  This can be put anywhere you like, e.g. <code>~/schoolWorkingCopy/</code>.  As the name suggests, the local working copy is where you will develop your project.</li>
+<li> <b>the local repository</b> - Contains a record of all current and previous versions of your code as you develop it, but it is stored locally to compare itself against the remote repository.  This is stored in the .git hidden subdirectory of your working copy.  If you use <code>git</code> properly, this version will stay in sync with your remote repository.  Do not directly edit any files in your local repository!  That is <code>git</code>'s job, using the following commands will update this repository using the changes in your local repo.</li></ol>
+<h3><span class="mw-headline" id="Repo_Setup">Repo Setup</span></h3>
+<p>The easiest way to create and start working on a project repo is to create a New Project on GitLab and then "clone" it onto your machine.  To do this, find the new project button on the home page of GitLab, give your project a name, and click "Create Project"
+</p>
+<ul class="gallery mw-gallery-nolines">
+		<li class="gallerybox" style="width: 125px"><div style="width: 125px">
+			<div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="/index.php/File:NewProjectButton.png" class="image"><img alt="NewProjectButton.png" src="/images/f/f5/NewProjectButton.png" width="120" height="42" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 125px"><div style="width: 125px">
+			<div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="/index.php/File:Createproject.png" class="image"><img alt="Createproject.png" src="/images/e/ef/Createproject.png" width="120" height="42" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+</ul>
+<p>After you first create a repository you will need to choose a local location to clone your working copy.  Let's assume you choose <code>~/schoolWorkingCopy</code>.  To clone your repository, use the <code>git clone &lt;url&gt; &lt;local location&gt;</code> command:
+</p>
+<pre>git clone ${ssh url} ~/schoolWorkingCopy
+</pre>
+<p>Where <code>${ssh url}</code> is found here:
+</p><p><a href="/index.php/File:Gitssh.png" class="image"><img alt="Gitssh.png" src="/images/0/0d/Gitssh.png" width="704" height="170" /></a>
+</p><p><b>Note:</b> If you click the drop down location just to the left of the repository url, you'll notice you have an option between SSH and HTTPS. While HTTPS can be easier to configure for a beginner, as a student in this department you will need to familiarize yourself with the capabilities and the added security of SSH. If you're curious about other options of interacting with your repository, feel free to read documentation provided by <a rel="nofollow" class="external text" href="https://gitlab.cs.wwu.edu/help">GitLab</a> and <a rel="nofollow" class="external text" href="https://help.github.com/">GitHub</a> on their respective websites.
+</p>
+<h3><span class="mw-headline" id="Individual_Work_Flow">Individual Work Flow</span></h3>
+<p>Now that you've set up your local repository, you are ready to work on developing your code. There is a basic flow of work when using git in your local working repository (<code>~/studentWorkingCopy</code> in our case).
+</p>
+<ol><li> If you use multiple computers to work on a project, you'll want to make sure that your local and remote repositories are synced up before you start working. The command you'll need is <code>git pull --all</code>.</li>
+<li> As you add, delete, or change files in your program, you will have to <code>add</code> these changes to keep track of them in your repository: 
+<ul><li> <code>git status</code> will tell you which files you have changed. 
+<dl><dt><dl><dd> <div class="thumb tnone"><div class="thumbinner" style="width:684px;"><a href="/index.php/File:GitStatus.png" class="image"><img alt="" src="/images/d/dd/GitStatus.png" width="682" height="259" class="thumbimage" /></a>  <div class="thumbcaption">Here there are two files that are not staged.  README.md was modified and main.py is a new file.</div></div></div></dt></dl></dd></dl></li>
+<li> <code>git add &lt;filename&gt;</code> will stage any new file or changed files to be committed to your local repository (.git directory). 
+<dl><dt><dl><dd> <div class="thumb tnone"><div class="thumbinner" style="width:688px;"><a href="/index.php/File:GitAdd.png" class="image"><img alt="" src="/images/9/92/GitAdd.png" width="686" height="175" class="thumbimage" /></a>  <div class="thumbcaption">Those two files are now ready to be committed.</div></div></div></dt></dl></dd></dl></li></ul></li>
+<li> Repeat step 2 until you get to a good stopping point to commit your changes.</li>
+<li> When you are ready, you will need to finalize your staged changes to the repository with <code>git commit</code>:
+<ul><li> Using <code>git commit</code> by itself without the <code>-m</code> will open a text editor in your terminal, Vim by default (<a href="/index.php/Getting_Around_the_Command_Line#Text_Editors" title="Getting Around the Command Line">See this section if you are unfamiliar with terminal text editors</a>). <b>If you save and exit the editor with no uncommented text, it will abort the commit.</b> 
+<dl><dt><dl><dd> <div class="thumb tnone"><div class="thumbinner" style="width:611px;"><a href="/index.php/File:GitCommitLong.png" class="image"><img alt="" src="/images/b/be/GitCommitLong.png" width="609" height="221" class="thumbimage" /></a>  <div class="thumbcaption">Editing the commit message with Vim.  If you save and exit the editor with no uncommented text, it will abort the commit.</div></div></div></dt></dl></dd></dl></li>
+<li> <b>Side note:</b> you can specify your default text editor by using the command <code>git config --global core.editor "$EDITOR"</code></li>
+<li> Using <code>git commit</code> with the <code>-m</code> flag, you can specify a short commit message quickly.
+<dl><dt><dl><dd> <div class="thumb tnone"><div class="thumbinner" style="width:819px;"><a href="/index.php/File:GitCommitShort.png" class="image"><img alt="" src="/images/6/65/GitCommitShort.png" width="817" height="104" class="thumbimage" /></a>  <div class="thumbcaption">Committing with the git commit command with a short commit message.</div></div></div></dt></dl></dd></dl></li></ul></li>
+<li> The last step is to push your commit(s) to your remote repository with <code>git push</code>.  This will update your remote repo to the current version of your project.
+<dl><dt><dl><dd> <div class="thumb tnone"><div class="thumbinner" style="width:572px;"><a href="/index.php/File:GitPush.png" class="image"><img alt="" src="/images/e/e1/GitPush.png" width="570" height="155" class="thumbimage" /></a>  <div class="thumbcaption">Example of running git push --all.</div></div></div></dt></dl></dd></dl></li>
+<li> Repeat steps 2 through 5 as necessary!</li></ol>
+<h3><span class="mw-headline" id="Conventions_on_Commit">Conventions on Commit</span></h3>
+<p>The use of commit messages are to summarize recent changes you have made and relay that back to your remote repository. It all depends on how you use <code>git</code>. For personal usage, you can do anything. If you're with a team, its good to talk about conventions so everyone knows the work flow everyone would like to see.  You can use the <code>-m</code> flag you to fit what you did in one quick line. In some cases, you'll want to use the command <code>git commit</code> to explain what's getting you changed with some context and reasoning.
+</p><p>Here's an article that will give you perspective on the power of commit messages: <a rel="nofollow" class="external free" href="https://chris.beams.io/posts/git-commit/">https://chris.beams.io/posts/git-commit/</a>
+</p>
+<h3><span class="mw-headline" id="Group_Work_and_Version_Control">Group Work and Version Control</span></h3>
+<p>You may have heard that you can use version control to work on group projects. If you simply have a group project in a class, it's easiest to have one person create a repository and have the rest of the team added as developers on the project. You'll find under settings for projects you create the members section and you can decide what roles should be given to each new member there. Feel free to look up the documentation by <a rel="nofollow" class="external text" href="https://docs.gitlab.com/ee/user/permissions.html">GitLab</a> for the different roles in a project in order to assign as you see fit. Generally, you'll be looking to add people as developers at most. Below is what the website will look like when you get there. 
+</p><p><a href="/index.php/File:Member.png" class="image"><img alt="Member.png" src="/images/thumb/b/b0/Member.png/800px-Member.png" width="800" height="183" srcset="/images/thumb/b/b0/Member.png/1200px-Member.png 1.5x, /images/b/b0/Member.png 2x" /></a>
+</p><p>Another form of group work through version control you may encounter in the department is forking. This is generally done when you come across a project that you haven't worked directly on but would like to make an addition to. Instructors may choose to create a project where they ask you to fork from their own repository and grade work submitted to your own copy of the master repository they create. The process of forking is really powerful and probably the one that gets confused over the most. Let's go through the process beginning to end of a team on GitLab called <code>groupteamthing</code> creating a repository for a project and user <code>billieSmith</code> coming across something they want to change. 
+</p>
+<ol><li> <code>billieSmith</code> forks the master repository from <code>groupteamthing</code>.</li>
+<li> <code>billieSmith</code> clones their forked repository to their working machine. This happens on the GitLab website and the fork button is found underneath the name of the project you want to change. 
+<ul><li><dl><dt><dl><dd><div class="thumb tnone"><div class="thumbinner" style="width:143px;"><a href="/index.php/File:Forkbutton.png" class="image"><img alt="" src="/images/b/bc/Forkbutton.png" width="141" height="50" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php/File:Forkbutton.png" class="internal" title="Enlarge"></a></div>The fork button.</div></div></div></dt></dl></dd></dl></li></ul></li>
+<li> <code>billieSmith</code> creates a branch on their machine. The command to do this is <code>git checkout -b ${name of branch}</code>. The purpose of this is to specify exactly what from another project you want to change and so the name should reflect that. It is invalid to include spaces in your branch names. 
+<ul><li>By the command <code>git branch</code>, <code>billieSmith</code> can see all the branches at their disposal. 
+<dl><dt><dl><dd><div class="thumb tnone"><div class="thumbinner" style="width:651px;"><a href="/index.php/File:BillieSmithrepo.png" class="image"><img alt="" src="/images/a/ab/BillieSmithrepo.png" width="649" height="237" class="thumbimage" /></a>  <div class="thumbcaption">How to view all your branches.</div></div></div></dt></dl></dd></dl></li></ul></li>
+<li> When you create a new branch you automatically get switched onto that branch. Now, <code>billieSmith</code> is on the new branch so they can work on their change. This step follows a lot of the individual steps as mentioned in the section above.</li>
+<li> To let <code>groupteamthing</code> know that someone fixed something on their project, <code>billieSmith</code> needs to commit their work and push to their remote repository. 
+<ul><li> These two commands are the same as you do for your individual work.
+<dl><dt><dl><dd><div class="thumb tnone"><div class="thumbinner" style="width:660px;"><a href="/index.php/File:BillieSmithCommit.png" class="image"><img alt="" src="/images/9/96/BillieSmithCommit.png" width="658" height="102" class="thumbimage" /></a>  <div class="thumbcaption">Committing and viewing status of git.</div></div></div></dt>
+<dd><div class="thumb tnone"><div class="thumbinner" style="width:802px;"><a href="/index.php/File:Mergebutton.png" class="image"><img alt="" src="/images/thumb/9/9d/Mergebutton.png/800px-Mergebutton.png" width="800" height="96" class="thumbimage" srcset="/images/9/9d/Mergebutton.png 1.5x, /images/9/9d/Mergebutton.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php/File:Mergebutton.png" class="internal" title="Enlarge"></a></div><b>Finding the merge button.</b></div></div></div></dd></dl></dd></dl></li></ul></li>
+<li> At this point, <code>billieSmith</code> would submit a merge request to <code>groupteamthing</code> on GitLab and depending on what they think, the merge request could get accepted or denied. 
+<ul><li> Creating the merge request. Be sure to describe what you did and why.
+<dl><dt><dl><dd><div class="thumb tnone"><div class="thumbinner" style="width:802px;"><a href="/index.php/File:Mergerequest.png" class="image"><img alt="" src="/images/thumb/0/0e/Mergerequest.png/800px-Mergerequest.png" width="800" height="479" class="thumbimage" srcset="/images/thumb/0/0e/Mergerequest.png/1200px-Mergerequest.png 1.5x, /images/0/0e/Mergerequest.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php/File:Mergerequest.png" class="internal" title="Enlarge"></a></div>Merge request form.</div></div></div></dt></dl></dd></dl></li></ul></li></ol>
+<h3><span class="mw-headline" id="Branch_Names">Branch Names</span></h3>
+<p>As mentioned before, commit messages are to describe changes you want to update to your remote repository. Branch names on the other hand should say why you forked the project in the first place. Could this project use a new feature? Did you notice a bug? Are you testing out some changes you think you'd want to see? What are you working on?
+</p>
+<h2><span class="mw-headline" id="GitLab_vs._Github">GitLab vs. Github</span></h2>
+<p>Throughout this section of the survival guide, we've been talking about GitLab and bringing back the importance of the use of SSH. There are other services that use <code>git</code> including a similar one you may recognize as GitHub. We have a server that runs GitLab for the department (which becomes the website <a rel="nofollow" class="external text" href="http://gitlab.cs.wwu.edu/">gitlab.cs.wwu.edu</a> and is where you log in) and that's why there's been an emphasis on GitLab throughout this section. The major difference between the two is what you get out of those services. We use GitLab because it's made to be used by organizations for remote hosting of repositories. GitHub is a free service that promotes open source projects, meaning when you create an account there, you agree to leave your code publicly available so anyone can comment and/or suggest changes. Neither GitHub nor GitLab created <code>git</code> and neither did BitBucket or other forms of remote hosting of repositories. <code>git</code> is an open source form of version control.
+</p>
+<h2><span class="mw-headline" id="A_thank_you">A thank you</span></h2>
+<p>Special thanks to Brian Hutchinson for the git tutorial provided in his Spring 2017 241 class, where the template of this page originated.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.165 seconds
+Real time usage: 0.289 seconds
+Preprocessor visited node count: 55/1000000
+Preprocessor generated node count: 72/1000000
+Post‚Äêexpand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key support:pcache:idhash:60-0!*!0!!en!5!* and timestamp 20171003003327 and revision id 612
+ -->
+</div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://support.cs.wwu.edu/index.php?title=Git&amp;oldid=612">https://support.cs.wwu.edu/index.php?title=Git&amp;oldid=612</a>"					</div>
+													<div id='catlinks' class='catlinks catlinks-allhidden'></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Git" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/index.php/Git"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Git&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/index.php/Git" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Git&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Git&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search CS Support [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/index.php/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+													<li id="n-Survival-Guide"><a href="/index.php/CS_Technical_Survival_Guide">Survival Guide</a></li>
+													<li id="n-recentchanges"><a href="/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+													<li id="n-randompage"><a href="/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/Git" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="/index.php/Special:RecentChangesLinked/Git" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+													<li id="t-specialpages"><a href="/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+													<li id="t-print"><a href="/index.php?title=Git&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+													<li id="t-permalink"><a href="/index.php?title=Git&amp;oldid=612" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="/index.php?title=Git&amp;action=info" title="More information about this page">Page information</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 29 September 2017, at 19:46.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/index.php/CS_Support:Privacy_policy" title="CS Support:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/index.php/CS_Support:About" title="CS Support:About">About CS Support</a></li>
+											<li id="footer-places-disclaimer"><a href="/index.php/CS_Support:General_disclaimer" title="CS Support:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+															<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>if(window.jQuery)jQuery.ready();</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":149});
+}</script>
+	</body>
+</html>
+íµ3Øâ˜      Y”Ø∂Y”Ø∑>Ce§       )    :https://support.cs.wwu.edu/index.php/Git necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/1.1 200 OK
+X-Powered-By: PHP/5.6.13
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Last-Modified: Fri, 29 Sep 2017 19:46:34 GMT
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 03 Oct 2017 15:41:42 GMT
+Server: Apache/2.4.16 (FreeBSD) OpenSSL/1.0.1s-freebsd PHP/5.6.13
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Vary: Accept-Encoding,Cookie
+ original-response-headers Date: Tue, 03 Oct 2017 15:26:57 GMT
+Server: Apache/2.4.16 (FreeBSD) OpenSSL/1.0.1s-freebsd PHP/5.6.13
+X-Powered-By: PHP/5.6.13
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Vary: Accept-Encoding,Cookie
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Last-Modified: Fri, 29 Sep 2017 19:46:34 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+ uncompressed-len 0 predictor::resource-count 22 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&only=styles&skin=vector&* 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=startup&only=scripts&skin=vector&* 1,3,1507045302,28672 net-response-time-onstart 180 net-response-time-onstop 206 predictor::https://support.cs.wwu.edu/images/thumb/b/be/Gitsshkeys.png/800px-Gitsshkeys.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/f/f5/NewProjectButton.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/e/ef/Createproject.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/0/0d/Gitssh.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/d/dd/GitStatus.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/9/92/GitAdd.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/b/be/GitCommitLong.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/6/65/GitCommitShort.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/e/e1/GitPush.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/thumb/b/b0/Member.png/800px-Member.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/b/bc/Forkbutton.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/a/ab/BillieSmithrepo.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/9/96/BillieSmithCommit.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/thumb/9/9d/Mergebutton.png/800px-Mergebutton.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/images/thumb/0/0e/Mergerequest.png/800px-Mergerequest.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/resources/assets/poweredby_mediawiki_88x31.png 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=jquery%2Cmediawiki&only=scripts&skin=vector&version=20151102T203008Z 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=jquery.accessKeyLabel%2Cclient%2CmwExtension%2CtabIndex%2Cthrottle-debounce%7Cmediawiki.legacy.ajax%2Cwikibits%7Cmediawiki.notify%2Cutil%7Cmediawiki.page.startup%7Cskins.vector.js&skin=vector&version=20161020T172750Z&* 1,3,1507045302,28672 predictor::https://img.shields.io/badge/CS-Support-blue.svg?style=flat 1,3,1507045302,28672 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=jquery.checkboxShiftClick%2Ccookie%2CgetAttrs%2ChighlightText%2CmakeCollapsible%2Cmw-jump%2Cplaceholder%2Csuggestions%7Cmediawiki.action.view.postEdit%7Cmediawiki.api%2Ccldr%2Ccookie%2CjqueryMsg%2Clanguage%2CsearchSuggest%2Ctemplate%2Ctoc%2Cuser%7Cmediawiki.language.data%2Cinit%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cuser.defaults&skin=vector&version=20161020T172751Z&* 1,3,1507045302,28672   ~è

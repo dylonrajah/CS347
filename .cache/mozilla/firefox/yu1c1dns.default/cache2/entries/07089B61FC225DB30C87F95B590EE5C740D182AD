@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- BEGIN Krux Control Tag for "Dummies" -->
+<!-- Source: /snippet/controltag?confid=JTSZoiJa&site=Dummies&edit=1 -->
+<script class="kxct" data-id="JTSZoiJa" data-timing="async" data-version="1.9" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+    var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+    k.src = /^https?:\/\/([a-z0-9_\-\.]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+      (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=JTSZoiJa"
+  ;
+    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  }());
+  
+</script>
+<!-- END Krux Controltag -->
+
+<script>
+window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+(function(){
+function retrieve(n){
+var m, k='kx'+n;
+if (window.localStorage) {
+return window.localStorage[k] || "";
+} else if (navigator.cookieEnabled) {
+m = document.cookie.match(k+'=([^;]*)');
+return (m && unescape(m[1])) || "";
+} else {
+return '';
+}
+}
+Krux.user = retrieve('user');
+Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+})();
+</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="http://www.dummies.com/wp-content/uploads/cropped-favicon1.png" type="image/x-icon">
+	<link rel="icon" href="http://www.dummies.com/wp-content/uploads/cropped-favicon1.png" type="image/x-icon">
+
+	<script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+
+	<script src="https://use.typekit.net/yhh4uqs.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<script async="" src="//www.google.com/adsense/search/async-ads.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>How Statements Are Used in Java - dummies</title>
+
+<script type="text/javascript">
+var dataLayer = [];
+</script>
+<script type="text/javascript" src="//assets.adobedtm.com/6e626c9ec247e474f6b98eb15a79a185cf7e26a5/satelliteLib-0edfaee8d3eaa20c807c47c1fbf6e53172d84790.js"></script>
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.dummies.com/programming/java/how-statements-are-used-in-java/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How Statements Are Used in Java - dummies" />
+<meta property="og:description" content="Unlike most programming languages, Java doesn&#8217;t use statements as its fundamental unit of code. Instead, it gives that honor to the class. However, every class must have a body, and the body of a class is made of one or more statements. In other words, you can&#8217;t have a meaningful Java program without at least &hellip;" />
+<meta property="og:url" content="http://www.dummies.com/programming/java/how-statements-are-used-in-java/" />
+<meta property="og:site_name" content="dummies" />
+<meta property="article:section" content="Java" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="Unlike most programming languages, Java doesn&#8217;t use statements as its fundamental unit of code. Instead, it gives that honor to the class. However, every class must have a body, and the body of a class is made of one or more statements. In other words, you can&#8217;t have a meaningful Java program without at least [&hellip;]"/>
+<meta name="twitter:title" content="How Statements Are Used in Java - dummies"/>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="dummies &raquo; Feed" href="http://www.dummies.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="dummies &raquo; Comments Feed" href="http://www.dummies.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.dummies.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.12"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='dummies-bootstrap-css'  href='http://www.dummies.com/wp-content/themes/dummies/js/vendors/bootstrap/dist/css/bootstrap.min.css?ver=4.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='dummies-font-awesome-css'  href='http://www.dummies.com/wp-content/themes/dummies/js/vendors/fontawesome/css/font-awesome.min.css?ver=4.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='dummies-styles-css'  href='http://www.dummies.com/wp-content/themes/dummies/css/styles.css?ver=4.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='dummies-style-css'  href='http://www.dummies.com/wp-content/themes/dummies/style.css?ver=4.3.12' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.dummies.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.dummies.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.dummies.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.12" />
+<link rel='shortlink' href='http://www.dummies.com/?p=172140' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<link rel="icon" href="http://www.dummies.com/wp-content/uploads/cropped-favicon1-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://www.dummies.com/wp-content/uploads/cropped-favicon1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.dummies.com/wp-content/uploads/cropped-favicon1-180x180.png">
+<meta name="msapplication-TileImage" content="http://www.dummies.com/wp-content/uploads/cropped-favicon1-270x270.png">
+	
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<!-- Yieldbot.com Intent Tag LOADING -->
+
+<script type="text/javascript">
+var ybotq = ybotq || [];
+(function() {
+  var js = document.createElement('script');
+  js.src = '//cdn.yldbt.com/js/yieldbot.intent.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(js, node);
+})();
+</script>
+<script type="text/javascript">
+  function ybWidth(){
+    var w = window,
+    d = document,
+    e = d.documentElement,
+    x = Math.max(e.scrollWidth,e.offsetWidth,e.clientWidth);
+    return x;
+  };
+</script>
+<script type="text/javascript">
+ybotq.push(function () {
+  if (ybWidth()>=481){
+    yieldbot.pub('7ae8');
+    yieldbot.defineSlot('atf-728x90');
+    yieldbot.defineSlot('midpage-300x250');
+  }else{
+    yieldbot.pub('31b2');
+    yieldbot.defineSlot('adhesion');
+    yieldbot.defineSlot('mobile_inline', {sizes: [
+      [320, 50],
+      [300, 250]
+    ]});
+  };
+  yieldbot.enableAsync();
+  yieldbot.go();
+});
+</script>
+
+	
+</head>
+<body class="single single-article postid-172140">
+<!-- Google Tag Manager -->
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NMWRPS"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-NMWRPS');</script>
+
+<!-- End Google Tag Manager -->
+<!-- Begin comScore Tag --><script>var _comscore = _comscore || [];_comscore.push({ c1: "2", c2: "15097263" });(function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s, el);})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=15097263&cv=2.0&cj=1" /></noscript><!-- End comScore Tag -->
+<script language="JavaScript" type="text/javascript">
+if (window.location.search.substring(7).toLowerCase().match('abortion|^anus$|bisexual|casual%20sex|circumcision|clitoris|^condom$|dildo|ejaculation|erection|erotic|foreskin|gay%20site|genital%20sex|genitalia|genitals|glans|good%20sex|homosexual|hookup|impotence|incest|insemination|intercourse|labia%20majora|labia%20minora|lesbian|light%20petting|lovemaking|luxurious%20foreplay|make%20love|make%20out|making%20love|nipple|orgasm|passionate%20kisser|penile%20implants|penis|pubic|^rape$|rectum|sanitary%20napkin|scrotal%20swelling|scrotum|semen|sex%20game|sex%20life|sex%20workers|sexual%20ability|sexual%20come-on|sexual%20conquests|sexual%20desires|sexual%20experience|sexual%20intercourse|sexual%20needs|sexual%20pleasure|sexual%20relations|sexual%20stimulation|sexual%20tension|sexually%20active|sexually%20provocative|sexy%20babe|sexy%20nightgown|sexy%20potential%20partners|sperm|strip-tease|syphilis|testes|testicles|vagina|vaginal%20dryness|vaginal%20plumper|vibrator|vulva')) {
+    var adblock = 'Y';
+} else {
+    var adblock = 'N';
+}
+
+if (adblock == 'Y'){
+    // do nothing
+} else {
+
+}
+
+</script>
+
+			<header class="main-header">
+				<nav class="navbar main-nav navbar-fixed-top">
+					<div class="container-fluid">
+			
+				<div class="navbar-header">
+					<a class="navbar-brand" rel="home" href="http://www.dummies.com/">
+						<img alt="Brand" src="http://www.dummies.com/wp-content/themes/dummies/img/branding/dummies.svg">
+					</a>
+			
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="search visible-xs"><a href="#" class="dropdown-toggle search-trigger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></a><div class="dropdown-menu">
+							<form action="http://www.dummies.com/" method="GET" class="form-inline search-form" id="searchForm">
+								<div class="form-group"><label class="sr-only" for="s">Search</label>
+				<div class="input-group">
+					<input id="top-search" type="text" name="s" required class="form-control input-lg typeahead" autocomplete="off" placeholder="Search" data-endpoint="http://www.dummies.com/search-auto-complete/">
+					<button type="submit" class="hidden">Submit</button>
+				</div>			</div>
+							</form>
+						</div></div>
+						<div class="my-account visible-xs"><figure class="wheater-icon">
+							<img src="http://www.dummies.com/wp-content/themes/dummies/img/fpo/wheater.png" alt="Snow">
+						</figure><div class="wheater">
+							<span class="location">San Francisco, CA</span>
+							<span class="tips">Brr, it¬¥s cold outside</span>
+						</div><figure class="profile-img">
+						<a href="#"><img class="img-responsive" src="//s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg" alt="The Pulpit Rock"></a>
+					</figure></div>
+					</div><div class="collapse navbar-collapse" id="navbar"><ul class="nav navbar-nav"><li class="dropdown"><a  aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href=""><div class="wrap"> Browse <span>Topics</span></div></a><div class="dropdown-menu">
+                            <div class="row"> <div class="col-sm-4 col-xs-12"><h3> Live</h3><ul><li><a  href="/consumer-electronics/" href="/consumer-electronics/">Consumer Electronics</a></li><li><a  href="/food-drink/" href="/food-drink/">Food & Drink</a></li><li><a  href="/games/" href="/games/">Games</a></li><li><a  href="/health/" href="/health/">Health</a></li><li><a  href="/personal-finance/" href="/personal-finance/">Personal Finance</a></li><li><a  href="/home-garden/" href="/home-garden/">Home & Garden</a></li><li><a  href="/pets/" href="/pets/">Pets</a></li><li><a  href="/relationships/" href="/relationships/">Relationships</a></li><li><a  href="/sports/" href="/sports/">Sports</a></li><li><a  href="/religion/" href="/religion/">Religion</a></li></ul> </div> <div class="col-sm-4 col-xs-12"><h3> Learn</h3><ul><li><a  href="/art-center/" href="/art-center/">Art Center</a></li><li><a  href="/crafts/" href="/crafts/">Crafts</a></li><li><a  href="/education/" href="/education/">Education</a></li><li><a  href="/languages/" href="/languages/">Languages</a></li><li><a  href="/photography/" href="/photography/">Photography</a></li><li><a  href="/test-prep/" href="/test-prep/">Test Prep</a></li></ul> </div> <div class="col-sm-4 col-xs-12"><h3> Work</h3><ul><li><a  href="/social-media/" href="/social-media/">Social Media</a></li><li><a  href="/software/" href="/software/">Software</a></li><li><a  href="/programming/" href="/programming/">Programming</a></li><li><a  href="/web-design-development/" href="/web-design-development/">Web Design & Development</a></li><li><a  href="/business/" href="/business/">Business</a></li><li><a  href="/careers/" href="/careers/">Careers</a></li><li><a  href="/computers/" href="/computers/">Computers</a></li></ul> </div>    </div>
+                        </div></li><li class="dropdown"><a  target="_blank" href="http://www.dummies.biz" href="http://www.dummies.biz"> B2B <span>Solutions</span></a></li><li class="dropdown"><a  target="_blank" href="http://www.dummies.com/store.html" href="http://www.dummies.com/store.html"> Shop for <span>Books</span></a></li></ul><ul class="nav navbar-nav navbar-right">
+							<li class="my-account"><figure class="wheater-icon">
+							<img src="http://www.dummies.com/wp-content/themes/dummies/img/fpo/wheater.png" alt="Snow">
+						</figure><div class="wheater">
+							<span class="location">San Francisco, CA</span>
+							<span class="tips">Brr, it¬¥s cold outside</span>
+						</div><figure class="profile-img">
+						<a href="#"><img class="img-responsive" src="//s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg" alt="The Pulpit Rock"></a>
+					</figure>	</li>
+							<li class="dropdown search"><a href="#" class="dropdown-toggle search-trigger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></a><div class="dropdown-menu">
+							<form action="http://www.dummies.com/" method="GET" class="form-inline search-form" id="searchForm">
+								<div class="form-group"><label class="sr-only" for="s">Search</label>
+				<div class="input-group">
+					<input id="top-search" type="text" name="s" required class="form-control input-lg typeahead" autocomplete="off" placeholder="Search" data-endpoint="http://www.dummies.com/search-auto-complete/">
+					<button type="submit" class="hidden">Submit</button>
+				</div>			</div>
+							</form>
+						</div>	</li>
+						</ul>
+					</div>
+					</div>
+				</nav>
+			</header>
+			 <section class="ads half-padding">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12"><!-- Link Unit Articles Responsive -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript">
+var sexBlockStr = window.location.href.search("/relationships/sex/");
+if (sexBlockStr == -1){
+ document.writeln('<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4203167504912449" data-ad-slot="6467930308" data-ad-format="link"></ins>'); 
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  document.writeln('<div style="padding-bottom:1.5em"></div>');
+}
+</script>
+<!-- /Link Unit Articles Responsive -->
+
+<script type='text/javascript'>
+var article_page_top_ad;
+var articles_page_left_ad;
+//var article_page_content_ad;
+//var article_page_content_bottom_ad_one;
+//var article_page_content_bottom_ad_two;
+var article_page_content_ad_arr = [];
+var article_page_content_bottom_ad_one_arr = [];
+var article_page_content_bottom_ad_two_arr = [];
+var article_page_one_by_one_arr = [];
+
+
+googletag.cmd.push(function() {
+<!-- Start: GPT mapping -->
+	article_page_top_ad_mapping = googletag.sizeMapping().addSize([1050, 200], [[970, 250], [970, 90], [728, 90]]).addSize([800, 480], [728,90]).addSize([745, 480], [728, 90]).addSize([0, 0], [[300,250],
+ [320, 100], [320, 50]]).build();
+
+	//topbanner declaration
+	article_page_top_ad = googletag.defineSlot('/21618997260/dummiessite/article_page_top_ad', [[728, 90], [970, 250]], 'article_page_top_ad').defineSizeMapping(article_page_top_ad_mapping).addService(googletag.pubads());
+	
+//Krux custom criteria
+googletag.pubads().setTargeting("ksg", Krux.segments);
+googletag.pubads().setTargeting("kuid", Krux.user);
+
+googletag.pubads().setTargeting("ybot",yieldbot.getPageCriteria());
+
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableAsyncRendering();
+
+googletag.pubads().disableInitialLoad();
+
+googletag.enableServices();
+});
+</script>
+
+<div id='article_page_top_ad'>
+  <script type='text/javascript'>
+    googletag.cmd.push(function() { 
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.display('article_page_top_ad');
+      googletag.pubads().refresh([article_page_top_ad]);
+    });
+  </script>
+</div>               </div>
+                                    </div>
+                                </div>
+                            </section><div class="article-page container fluid-sm">
+                            <section class="fixed-container"><aside class="article-aside hidden-xs hidden-sm">
+						<div class="aside-container">
+							<h2 class="h5">RELATED ARTICLES</h2>
+							<div class="scrollbar-container">
+								<ul class="aside-list"> <li data-pid="172140" >
+							<a href="http://www.dummies.com/programming/java/how-statements-are-used-in-java/" data-progress="1" data-target="172140">
+								<div class="media"><div class="media-body">
+										<p class="media-heading">How Statements Are Used in Java</p>
+									</div>
+								</div>
+							 </a>
+						 </li>  <li data-pid="152272" >
+							<a href="http://www.dummies.com/programming/java/java-keywords/" data-progress="2" data-target="152272">
+								<div class="media"><div class="media-body">
+										<p class="media-heading">Java Keywords</p>
+									</div>
+								</div>
+							 </a>
+						 </li>  <li data-pid="207675" >
+							<a href="http://www.dummies.com/programming/java/beginning-programming-with-java-for-dummies-cheat-sheet/" data-progress="3" data-target="207675">
+								<div class="media"><div class="media-body">
+										<p class="media-heading">Beginning Programming with Java For Dummies Cheat Sheet</p>
+									</div>
+								</div>
+							 </a>
+						 </li>  <li data-pid="241967" >
+							<a href="http://www.dummies.com/programming/java/java-identifiers-programmer-declare/" data-progress="4" data-target="241967">
+								<div class="media"><div class="media-body">
+										<p class="media-heading">Java Identifiers That You (the Programmer) Declare</p>
+									</div>
+								</div>
+							 </a>
+						 </li> <li data-pid="ads" data-progress="4"><div class="media ads"><div id="dummies_article_page_left_ad_1">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() { 
+      var article_page_left_ad_mapping = googletag.sizeMapping().addSize([1050, 200], [[300, 600], [300, 250], [336, 280]]).addSize([800, 480], [[300, 600], [300, 250]]).addSize([0, 0], []).build();	
+var article_page_left_ad0 = googletag.defineSlot('/21618997260/dummiessite/article_page_left_ad', [[300, 600], [300, 250]], 'dummies_article_page_left_ad_1').defineSizeMapping(article_page_left_ad_mapping).addService(googletag.pubads());
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.display('dummies_article_page_left_ad_1');
+
+      googletag.pubads().refresh([article_page_left_ad0]);
+    });
+  </script>
+</div></div></li> <li data-pid="241964" >
+							<a href="http://www.dummies.com/programming/java/identifiers-java-api/" data-progress="5" data-target="241964">
+								<div class="media"><div class="media-body">
+										<p class="media-heading">Identifiers in the Java API</p>
+									</div>
+								</div>
+							 </a>
+						 </li> 		</ul>
+			<a class="load_more hide" data-nonce="99184bc240" href="javascript:;">Load more</a>
+							</div>
+						</div>
+						</aside>      <div class="content-container">
+                                            <div class="article-container"><div id="emaildesc" class="hide" data-emaildesc = ""></div><article id="172140" data-url="http://www.dummies.com/programming/java/how-statements-are-used-in-java/" class="article-trigger  "  ><div ID="ISBN" class="hide" data-ISBN =""></div>
+ <script>googletag.cmd.push(function() { googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.pubads().setTargeting('isbn', "1118168232");
+googletag.enableServices(); });
+ </script><!--Teads InRead ads -->
+<div id="dummies_article_page_one_by_one_1">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_one_by_one0 = googletag.defineSlot('/21618997260/dummiessite/article_page_one_by_one', [1, 1], 
+'dummies_article_page_one_by_one_1').addService(googletag.pubads());
+      googletag.display('dummies_article_page_one_by_one_1');
+      googletag.pubads().refresh([article_page_one_by_one0]);
+    });
+  </script>
+</div><ol class="breadcrumb"><li><a href="http://www.dummies.com"><span class="fa fa-home"></span></a></li><li><a href="http://www.dummies.com/programming/">Programming</a></li><li><a href="http://www.dummies.com/programming/java/">Java</a></li><li class="active">How Statements Are Used in Java</li></ol><div class="row">
+                                <div class="col-sm-7 article-title">
+                                    <h1>How Statements Are Used in Java</h1>
+                                </div>
+                                <div class="col-sm-5"><section class="related-book small">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a target="_blank" href="http://www.dummies.com/store/product/Java-For-Dummies-Quick-Reference.productCd-1118168232.html">
+                                    <img width="67" height="105" src="http://www.dummies.com/wp-content/uploads/1118168232.jpg" class="book-img" alt="1118168232.jpg" />
+                                    <p class="pre-header">Related Book</p>
+                                    <h2>Java For Dummies Quick Reference</h2>
+                                    </a>        </div>
+                            </div>
+                        </section> </div>
+                            </div><p class="author">By  <a href="http://www.dummies.com/?s=&a=doug-lowe">Doug Lowe </a> </p><p>Unlike most programming languages, Java doesn&#8217;t use statements as its fundamental unit of code. Instead, it gives that honor to the class. However, every class must have a body, and the body of a class is made of one or more statements. In other words, you can&#8217;t have a meaningful Java program without at least one statement.</p>
+<p>The simplest Java statements are <i>declaration statements,</i><i> </i>which declare variables. For example:</p>
+<pre class="code">int i;
+String s = "This is a string";
+Customer c = new Customer();</pre>
+<p>Another common type of statement is an <i>expression statement</i><i>,</i> which performs a calculation:</p>
+<pre class="code">i = a + b;
+salesTax = invoiceTotal * taxRate;
+System.out.println("Hello, World!");</pre>
+<p class="Tip">Most, but not all, Java statements must end with a semicolon. The basic rule is that declaration and expression statements must end with a semicolon, but most other statement types do not.</p>
+<p>What makes this rule tricky is that most other types of statements include one or more declaration or expression statements that do use semicolons. For example, here&#8217;s a typical <span class="code">if</span> statement:</p>
+<pre class="code">if (total &gt; 100)
+    discountPercent = 10;</pre>
+<p>In this example, the assignment statement (<span class="code">discountPercent = 10</span>) must end with a semicolon. However, the <span class="code">if</span> statement does not require a semicolon.</p>
+<p class="Tip">You don&#8217;t have to do anything special to continue a statement onto a second line. Thus, the statement</p>
+<pre class="code">x = (y + 5) / z;</pre>
+<p>is identical to this statement:</p>
+<pre class="code">x = 
+(y + 5) / z;</pre>
+<div class='ad x2'>
+<div id="dummies_article_page_content_ad_1" data-dumm-ad-cb="dummies_article_page_content_ad_1">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_content_ad_mapping = googletag.sizeMapping().addSize([1050, 200], [728, 90]).addSize([800, 480], [[300, 250],[468, 60]]).addSize([745, 480], [[300, 250],[468, 60]]).addSize([0, 0], []).build();
+var article_page_content_ad0 = googletag.defineSlot('/21618997260/dummiessite/article_page_content_ad', [300, 250], 'dummies_article_page_content_ad_1').defineSizeMapping(article_page_content_ad_mapping).addService(googletag.pubads());
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+ googletag.display('dummies_article_page_content_ad_1');
+      article_page_content_ad_arr.push(article_page_content_ad0);
+    });
+  </script>
+</div>
+</div>
+<div class="sharing-tools-xs visible-xs x2-top text-center">
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-568a36f979993447"></script>
+                            <div class="addthis_sharing_toolbox"></div>
+                        </div><div class="article-separator"></div><section class="ads">
+                            <div class="row">
+                                <div class="col-sm-12"><div id="dummies_article_page_content_bottom_ad_one_1">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_content_bottom_ad_one_mapping = googletag.sizeMapping().addSize([0, 0], [300, 250]).build();
+var article_page_content_bottom_ad_one0 = googletag.defineSlot('/21618997260/dummiessite/article_page_content_bottom_ad_one', [300, 250], 'dummies_article_page_content_bottom_ad_one_1').defineSizeMapping(article_page_content_bottom_ad_one_mapping).addService(googletag.pubads());
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.pubads().setTargeting('isbn', "1118168232");
+googletag.display('dummies_article_page_content_bottom_ad_one_1');
+
+      article_page_content_bottom_ad_one_arr.push(article_page_content_bottom_ad_one0);
+    });
+  </script>
+</div><div id="dummies_article_page_content_bottom_ad_two_1">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+var article_page_content_bottom_ad_two_mapping = googletag.sizeMapping().addSize([1050, 200], [300, 250]).addSize([0, 0], []).build();
+var article_page_content_bottom_ad_two0 = googletag.defineSlot('/21618997260/dummiessite/article_page_content_bottom_ad_two', [300, 250], 
+'dummies_article_page_content_bottom_ad_two_1').defineSizeMapping(article_page_content_bottom_ad_two_mapping).addService(googletag.pubads());
+      googletag.pubads().setTargeting('cat', ["Work","Programming","Java"]);
+googletag.pubads().setTargeting('isbn', "1118168232");
+googletag.display('dummies_article_page_content_bottom_ad_two_1');
+
+      article_page_content_bottom_ad_two_arr.push(article_page_content_bottom_ad_two0);
+    });
+  </script>
+</div>         </div>
+                            </div>
+                        </section><section id="promoted-stories" class="article-recommendations">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                </div>
+                            </div>
+                        </section>                  </div>
+                                </div>
+                            </section>
+                          </div>	
+	<div id="page-overlay"></div>
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-568a36f979993447" async="async"></script>
+	<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/vendors/jquery/dist/jquery.min.js?ver=20150330'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var DummiesAjax = {"ajaxurl":"http:\/\/www.dummies.com\/wp-admin\/admin-ajax.php"};
+var DummiesAjax = {"ajaxurl":"http:\/\/www.dummies.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/min/scripts.min.js?ver=20150330'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/vendors/scrollmagic/scrollmagic/minified/ScrollMagic.min.js?ver=20150330'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/vendors/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js?ver=20150330'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/vendors/magnific-popup/dist/jquery.magnific-popup.min.js?ver=20150330'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js?ver=20150330'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/pages/fnl_cookies.js?ver=20150330'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/vendors/bootstrap/dist/js/bootstrap.min.js?ver=20150330'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.6'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.6'></script>
+<script type='text/javascript' src='http://www.dummies.com/wp-content/themes/dummies/js/pages/article.js?ver=1.0'></script>
+
+<script type="text/javascript">
+if(typeof _satellite != "undefined"){
+  _satellite.pageBottom();
+}
+</script>	
+	</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 98/176 queries in 0.481 seconds using disk
+Content Delivery Network via Amazon Web Services: S3: www.dummies.com
+
+ Served from: www.dummies.com @ 2017-10-03 16:22:17 by W3 Total Cache -->å∞6√"           Y”π>>Ck¬Y”«H   I    :http://www.dummies.com/programming/java/how-statements-are-used-in-java/ strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Cache-Control: max-age=3600, public
+Date: Tue, 03 Oct 2017 16:22:17 GMT
+Etag: a24adebaf37f3b1b1926f7f62a79624c
+Expires: Tue, 03 Oct 2017 17:22:17 GMT
+Last-Modified: Tue, 03 Oct 2017 16:22:17 GMT
+Link: <http://www.dummies.com/?p=172140>; rel=shortlink
+Pragma: public
+Server: Apache
+X-Pingback: http://www.dummies.com/xmlrpc.php
+X-Cache: Miss from cloudfront
+Via: 1.1 5ecfd97124a5b15f1245ab731d34efe7.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: Fee83AtIFcruL5sUDJSIgMBCGoEheyo1jdiRWFnxe1TO2wiqfUOWIA==
+ original-response-headers Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: max-age=3600, public
+Date: Tue, 03 Oct 2017 16:22:17 GMT
+Etag: a24adebaf37f3b1b1926f7f62a79624c
+Expires: Tue, 03 Oct 2017 17:22:17 GMT
+Last-Modified: Tue, 03 Oct 2017 16:22:17 GMT
+Link: <http://www.dummies.com/?p=172140>; rel=shortlink
+Pragma: public
+Server: Apache
+X-Pingback: http://www.dummies.com/xmlrpc.php
+X-Cache: Miss from cloudfront
+Via: 1.1 5ecfd97124a5b15f1245ab731d34efe7.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: Fee83AtIFcruL5sUDJSIgMBCGoEheyo1jdiRWFnxe1TO2wiqfUOWIA==
+ uncompressed-len 0 predictor::resource-count 100 predictor::http://www.dummies.com/wp-includes/js/jquery/jquery.js?ver=1.11.3 1,1,0,4096 predictor::http://www.dummies.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/img/branding/dummies.svg 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/img/fpo/wheater.png 1,1,0,4096 predictor::http://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg 1,1,0,4096 predictor::http://cdn.krxd.net/controltag?confid=JTSZoiJa 1,1,0,4096 predictor::http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js 1,1,0,4096 predictor::http://www.dummies.com/wp-content/uploads/1118168232.jpg 1,1,0,4096 predictor::http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-568a36f979993447 1,0,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/jquery/dist/jquery.min.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/min/scripts.min.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/scrollmagic/scrollmagic/minified/ScrollMagic.min.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/magnific-popup/dist/jquery.magnific-popup.min.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/pages/fnl_cookies.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/bootstrap/dist/js/bootstrap.min.js?ver=20150330 1,1,0,4096 predictor::http://www.dummies.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.6 1,1,0,4096 predictor::http://www.dummies.com/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.6 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/pages/article.js?ver=1.0 1,1,0,4096 predictor::http://assets.adobedtm.com/6e626c9ec247e474f6b98eb15a79a185cf7e26a5/s-code-contents-ddc36a3e4dd9dc19c1ed15f86aa65ad4b9b22849.js 1,1,0,4096 predictor::http://www.dummies.com/wp-includes/js/wp-emoji-release.min.js?ver=4.3.12 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/perfect-scrollbar/css/perfect-scrollbar.css 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/js/vendors/animatecss/animate.css 1,1,0,4096 predictor::http://cdn.krxd.net/ctjs/controltag.js.73f4c3c5d949eb6203a73b137d7242c4 1,1,0,4096 predictor::http://wileypublishing.sc.omtrdc.net/b/ss/wileydumcom/1/JS-2.2.0-D7QN/s1840255971664?AQB=1&ndh=1&pf=1&t=3%2F9%2F2017%209%3A22%3A18%202%20420&D=D%3D&mid=32695164841165095822443864185091148913&aamlh=9&ce=UTF-8&g=http%3A%2F%2Fwww.dummies.com%2Fprogramming%2Fjava%2Fhow-statements-are-used-in-java%2F&r=https%3A%2F%2Fwww.google.com%2F&cc=USD&aamb=cIBAx_aQzFEHcPoEv0GwcQ&s=1920x1080&c=24&j=1.8.5&v=N&k=Y&bw=1280&bh=877&mcorgid=1B6E34B85282A0AC0A490D44%40AdobeOrg&AQE=1 1,1,0,4096 predictor::http://www.googletagservices.com/tag/js/gpt.js 1,1,0,4096 predictor::http://cdn.yldbt.com/js/yieldbot.intent.js 1,1,0,4096 predictor::http://www.googletagmanager.com/gtm.js?id=GTM-NMWRPS 1,1,0,4096 predictor::http://b.scorecardresearch.com/beacon.js 1,1,0,4096 predictor::http://www.dummies.com/wp-content/themes/dummies/img/tips/tip.png 1,1,0,4096 predictor::http://odb.outbrain.com/utils/get?url=http%3A%2F%2Fwww.dummies.com%2Fprogramming%2Fjava%2Fhow-statements-are-used-in-java%2F&srcUrl=http%3A%2F%2Fwww.dummies.com%2Ffeed%2F&settings=true&recs=true&widgetJSId=AR_8&key=NANOWDGT01&idx=0&version=01002044&ref=https%3A%2F%2Fwww.google.com%2F&apv=false&sig=KmsBwVEP&format=html&rand=64447&lsd=d179d5a3-ee47-4673-972b-a0112c62b608&winW=1280&winH=877&adblck=false 1,1,0,4096 predictor::https://use.typekit.net/af/d85dc3/000000000000000000011c34/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3 1,1,0,4096 predictor::https://use.typekit.net/af/bf8c26/000000000000000000011c35/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3 1,1,0,4096 predictor::https://use.typekit.net/af/2398c6/000000000000000000011c38/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3 1,1,0,4096 predictor::https://use.typekit.net/af/9eea64/000000000000000000011c39/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3 1,1,0,4096 predictor::https://use.typekit.net/af/2f5c44/000000000000000000011c3a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3 1,1,0,4096 predictor::https://use.typekit.net/af/21f561/000000000000000000011c3b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3 1,1,0,4096 predictor::https://use.typekit.net/af/9cd8a9/000000000000000000011c3c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3 1,1,0,4096 predictor::https://use.typekit.net/af/92beb2/000000000000000000011c3d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3 1,1,0,4096 predictor::http://m.addthisedge.com/live/boost/ra-568a36f979993447/_ate.track.config_resp 1,1,0,4096 predictor::http://m.addthis.com/live/red_lojson/300lo.json?si=59d3b93aa12718a4&bkl=0&bl=1&pdt=938&sid=59d3b93aa12718a4&pub=ra-568a36f979993447&rev=v8.1.0a-wp&ln=en&pc=men&cb=0&ab=-&dp=www.dummies.com&dr=www.google.com&fp=programming%2Fjava%2Fhow-statements-are-used-in-java%2F&fr=&of=0&pd=0&irt=1&vcl=1&md=0&ct=1&tct=0&abt=0&cdn=0&pi=1&rb=4&gen=100&chr=UTF-8&colc=1507047738419&jsl=1&uvs=59d3b8b492bcbf0b001&skipb=1&callback=addthis.cbs.oln9_89613864687975580 1,1,0,4096 predictor::https://pagead2.googlesyndication.com/pub-config/r20160913/ca-pub-4203167504912449.js 1,1,0,4096 predictor::http://pagead2.googlesyndication.com/pagead/js/r20170927/r20170110/show_ads_impl.js 1,1,0,4096 predictor::http://b.scorecardresearch.com/b?c1=2&c2=15097263&ns__t=1507047738486&ns_c=UTF-8&cv=3.1&c8=How%20Statements%20Are%20Used%20in%20Java%20-%20dummies&c7=http%3A%2F%2Fwww.dummies.com%2Fprogramming%2Fjava%2Fhow-statements-are-used-in-java%2F&c9=https%3A%2F%2Fwww.google.com%2F 1,1,0,4096 predictor::https://securepubads.g.doubleclick.net/gpt/pubads_impl_153.js 1,0,0,4096 predictor::https://p.typekit.net/p.gif?s=1&k=yhh4uqs&ht=tk&h=www.dummies.com&f=14541.14542.14545.14546.14547.14548.14549.14550&a=791912&js=1.18.24&app=typekit&e=js&_=1507047738581 1,1,0,4096 predictor::http://s7.addthis.com/static/layers.7b07cf1723ea32c141ba.js 1,1,0,4096 predictor::http://www.google-analytics.com/analytics.js 1,1,0,4096 predictor::https://www.google-analytics.com/analytics.js 1,1,0,4096 predictor::http://pixel.quantserve.com/aquant.js?a=p-J5smeNe48BWeQ 1,1,0,4096 predictor::https://pagead2.googlesyndication.com/pagead/js/r20170927/r20170110/osd.js 1,1,0,4096 predictor::http://images.outbrain.com/v1/UC9GSjFoaERnNS9oVTZzemlhZk05dz09/eyJpdSI6Ijc1YTAwZmIyZjQ1OTk4YTY4NGI5MDgxMGVhM2I0ZDFkZDFlYjNhZTIyYzBkNjZjYzMzNjBhNzgxYjdjNGUyMjMiLCJ3IjoyMDAsImgiOjE0MiwiZCI6MS4wLCJjcyI6MCwiZiI6MH0%3D.jpg 1,1,0,4096 predictor::http://images.outbrain.com/Imaginarium/api/uuid/5fa19e916eb889448c3a9073fd78162180f6ee9f4bd8fb0eb9b02f6cf55d04a8/200/142/1.0 1,1,0,4096 predictor::http://images.outbrain.com/Imaginarium/api/uuid/3d504005f3d470c39016b8e9e776d5551b5b365f1ebeee299af02690f6202f18/200/142/1.0 1,1,0,4096 predictor::http://widgets.outbrain.com/images/widgetIcons/ob_logo_67x12.png 1,1,0,4096 predictor::http://odb.outbrain.com/utils/get?url=http%3A%2F%2Fwww.dummies.com%2Fprogramming%2Fjava%2Fhow-statements-are-used-in-java%2F&srcUrl=http%3A%2F%2Fwww.dummies.com%2Ffeed%2F&settings=true&recs=true&widgetJSId=AR_6&key=NANOWDGT01&idx=1&version=01002044&ref=https%3A%2F%2Fwww.google.com%2F&apv=true&sig=KmsBwVEP&format=html&rand=39299&lsd=d179d5a3-ee47-4673-972b-a0112c62b608&t=MV80YTVjNjUzOTY3NmEyYzc5YzhiMzFiYWI1NDkzMTYzZl8w&winW=1280&winH=877&adblck=false 1,1,0,4096 predictor::http://rules.quantcount.com/rules-p-J5smeNe48BWeQ.js 1,1,0,4096 predictor::http://s7.addthis.com/static/136.6af2d0105b0c788761be.js 1,1,0,4096 predictor::http://graph.facebook.com/?id=http%3A%2F%2Fwww.dummies.com%2Fprogramming%2Fjava%2Fhow-statements-are-used-in-java%2F&callback=_ate.cbs.rcb_42a60 1,1,0,4096 predictor::http://widgets.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fwww.dummies.com%2Fprogramming%2Fjava%2Fhow-statements-are-used-in-java%2F&callback=window._ate.cbs.rcb_4gsw0 1,1,0,4096 predictor::http://widgets.outbrain.com/nanoWidget/01002044/module/skyLander.js 1,1,0,4096 predictor::https://idsync.rlcdn.com/456839.gif?partner_uid=vj8bt8ea6xdh69nwu11 1,1,0,4096 predictor::https://idsync.rlcdn.com/456839.gif?partner_uid=p70eab38ad9d5a5f87d465802cec46381 1,1,0,4096 predictor::https://idsync.rlcdn.com/456839.gif?partner_uid=uj8bt8ed6s1xwefer 1,1,0,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssX5ysRWjRUETdbV1PIwGRy1vL5E9jcP27iVzxyKFuYwaB8jYA0dup30Jh2Oh-E33lZBkgM9B0xbAd0BkIme8uZRGP3xOSjdRIGhiTlVPJ4LtdOXOT_fWvPD_mDzLUsQ_Ee8q7trg_h46wfstePGCi79AjC_M4NYW6qrIKD6zCT-NkiSHE1EbN7whnIP5V4xIBNO8UNS4iL867DTsuhIBImZwd8HVtu2ei0xIe-hNQCHTMSK94igH-eNgMJYltVFWuFRYmfeeqxvh-olQ&sig=Cg0ArKJSzCn55j326Wy0EAE&urlfix=1&adurl= 1,1,0,4096 predictor::http://a.teads.tv/page/57414/tag 1,1,0,4096 predictor::https://tpc.googlesyndication.com/pagead/js/r20170927/r20110914/activeview/osd_listener.js 1,0,0,4096 predictor::http://log.outbrain.com/loggerServices/widgetGlobalEvent?eT=0&tm=1102&pid=1659&sid=6250792&wId=149&wRV=01002044&rId=4a5c6539676a2c79c8b31bab5493163f&idx=0&pvId=4a5c6539676a2c79c8b31bab5493163f&org=1&pad=5&pVis=1&eIdx=&ab=0&wl=0 1,1,0,4096 predictor::http://log.outbrain.com/loggerServices/widgetGlobalEvent?eT=6&tm=1103&pid=1659&sid=6250792&wId=144&wRV=01002044&rId=e24b484330f80f70e0a9d9f3d402ecb0&idx=1&pvId=4a5c6539676a2c79c8b31bab5493163f&org=0&pad=0&pVis=0&eIdx=&ab=0&wl=0 1,1,0,4096 predictor::http://cdn.teads.tv/media/format/v3/teads-format.min.js 1,1,0,4096 predictor::http://t.teads.tv/track?action=placementCall&pageId=57414&pid=62461&gid=&slot=native&env=js-web&ts=1507047739571&auctid=b242c127-6717-40b3-9f19-815ee30b90b2 1,1,0,4096 predictor::http://t.teads.tv/track?action=slotAvailable&pageId=57414&pid=62461&gid=&slot=native&env=js-web&ts=1507047739571&auctid=b242c127-6717-40b3-9f19-815ee30b90b2 1,1,0,4096 predictor::http://b.scorecardresearch.com/p?C1=1&C2=17198971&C5=01 1,1,0,4096 predictor::http://t.teads.tv/track?action=adCall&pageId=57414&pid=62461&gid=&slot=native&env=js-web&ts=1507047739571&auctid=b242c127-6717-40b3-9f19-815ee30b90b2 1,1,0,4096 predictor::http://t.teads.tv/track?action=noAd-notFilled&pageId=57414&pid=62461&gid=&slot=native&env=js-web&ts=1507047739571&auctid=b242c127-6717-40b3-9f19-815ee30b90b2 1,1,0,4096 predictor::http://assets.adobedtm.com/6e626c9ec247e474f6b98eb15a79a185cf7e26a5/scripts/satellite-595010b464746d56ee00ed56.js 1,1,0,4096 predictor::https://usermatch.krxd.net/um/v2?partner=google 1,1,0,4096 predictor::http://beacon.krxd.net/optout_check?callback=Krux.ns._default.kxjsonp_optOutCheck 1,1,0,4096 predictor::http://cdn.krxd.net/userdata/get?pub=5c9d7251-7b10-4260-8df4-d859510ca122&callback=Krux.ns._default.kxjsonp_userdata 1,1,0,4096 predictor::http://wileypublishing.sc.omtrdc.net/b/ss/wileydumcom/1/JS-2.2.0-D7QN/s14883074422236?AQB=1&ndh=1&pf=1&t=3%2F9%2F2017%209%3A22%3A21%202%20420&D=D%3D&mid=32695164841165095822443864185091148913&aamlh=9&ce=UTF-8&g=http%3A%2F%2Fwww.dummies.com%2Fprogramming%2Fjava%2Fhow-statements-are-used-in-java%2F&cc=USD&events=event10&aamb=cIBAx_aQzFEHcPoEv0GwcQ&c41=172140&s=1920x1080&c=24&j=1.8.5&v=N&k=Y&bw=1280&bh=877&mcorgid=1B6E34B85282A0AC0A490D44%40AdobeOrg&AQE=1 1,1,0,4096 predictor::https://aa.agkn.com/adscores/g.js?sid=9212244187&_kdpid=2111c0af-fc3a-446f-ab07-63aa74fbde8e 1,1,0,4096 predictor::https://idsync.rlcdn.com/379708.gif?partner_uid=Lh2fPTNl 1,1,0,4096 predictor::http://kr.ixiaa.com/C726AB29-0470-440B-B8D2-D552CED3A3DC/a.gif 1,1,0,4096 predictor::http://loadm.exelator.com/load?_kdpid=e4942ff0-4070-4896-a7ef-e6a5a30ce9f9&buid=Lh2fPTNl&p=204&g=270&j=0 1,1,0,4096 predictor::http://r.nexac.com/e/getdata.xgi?dt=br&pkey=iefs40iefsj26&ru=http://beacon.krxd.net/data.gif?_kuid%3DLh2fPTNl%26_kdpid%3D8da8b14d-5569-4bec-bcea-722864ee8d06%26dlxid%3D%3Cna_id%3E%26dlxdata%3D%3Cna_da%3E 1,1,0,4096 predictor::http://r.nexac.com/e/getdata.xgi?dt=br&pkey=iyzu39iyzud95&ru=http://beacon.krxd.net/data.gif?_kuid%3DLh2fPTNl%26_kdpid%3Dbef9f122-393d-4c45-8d8d-32d8be7ac433%26dlxid%3D%3Cna_id%3E%26dlxdata%3D%3Cna_da%3E 1,1,0,4096 predictor::http://r.nexac.com/e/getdata.xgi?dt=br&pkey=bckw15bckwu20&ru=http://beacon.krxd.net/data.gif?_kuid%3DLh2fPTNl%26_kdpid%3D8bf57916-aac8-4f01-a386-4baf103b3e1f%26dlxid%3D%3Cna_id%3E%26dlxdata%3D%3Cna_da%3E 1,1,0,4096 predictor::http://r.nexac.com/e/getdata.xgi?dt=br&pkey=gwjn34gwjnh86&ru=http://beacon.krxd.net/data.gif?_kuid%3DLh2fPTNl%26_kdpid%3Dd7158cb7-a851-4e3c-b7ab-cc9e815b2399%26dlxid%3D%3Cna_id%3E%26dlxdata%3D%3Cna_da%3E 1,1,0,4096 predictor::http://r.nexac.com/e/getdata.xgi?dt=br&pkey=iefs40iefsj26&ru=http://beacon.krxd.net/data.gif?_kuid%3DLh2fPTNl%26_kdpid%3D536f0daa-aaaa-4d9e-9a25-dde40646786a%26dlxid%3D%3Cna_id%3E%26dlxdata%3D%3Cna_da%3E 1,1,0,4096 predictor::http://r.nexac.com/e/getdata.xgi?dt=br&pkey=rowp70rowpu60&ru=http://beacon.krxd.net/data.gif?_kuid%3DLh2fPTNl%26_kdpid%3D7c6392c9-e878-492c-8b14-bf06e3828ebd%26dlxid%3D%3Cna_id%3E%26dlxdata%3D%3Cna_da%3E 1,1,0,4096 predictor::http://r.nexac.com/e/getdata.xgi?dt=br&pkey=rsxs71rsxsk73&ru=http://beacon.krxd.net/data.gif?_kuid%3DLh2fPTNl%26_kdpid%3Dbb8ae0e2-9cd7-45b2-ad37-7737269627d8%26dlxid%3D%3Cna_id%3E%26dlxdata%3D%3Cna_da%3E 1,1,0,4096 predictor::http://www.dummies.com/wp-content/uploads/java-aio-5e-simple-class-diagram-50x50.jpg 1,1,0,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjstpueEdBzwZmKOCr1ocglJ95KIyFIvdTQzcjDpFw0YBp_pIZwEICSxq2FOHxnU4mWkwG2jHir0zC4XAn0ZQ_iBGi1VtW6riGHGZp4qhBsCi825dgnS_iL82Aav0Wdg2ZSRb87Q_24ZcBU26xGewl-f-H9mXIjPSPIdJ9eYI93czXrJQYa6cZXCjuJQ6LhNQ6WXhjGGvvEr4tC3OXL684InASsUsWT_KpYQfplNFpBHH10LXHCOpXpcW_iUnD2e9bgMj9AfIrrzelMEgtg&sig=Cg0ArKJSzNTpG_FiC_d6EAE&urlfix=1&adurl= 1,1,0,4096 predictor::http://ads.rubiconproject.com/ad/12558.js 1,1,0,4096 predictor::http://optimized-by.rubiconproject.com/a/12558/103056/484154-15.js?&cb=0.6065183652995393&tk_st=1&rf=http%3A//www.dummies.com/programming/java/how-statements-are-used-in-java/&rp_s=c&kw=Work,Programming,Java&tg_i.cat=Work%2CProgramming%2CJava&p_pos=atf&p_screen_res=1920x1080&ad_slot=103056_15 1,1,0,4096 predictor::http://beacon-us-west.rubiconproject.com/beacon/d/ce96d9ed-1a76-4c0d-a0ca-47ac515f2e5e?accountId=12558&siteId=103056&zoneId=484154&e=6A1E40E384DA563B135F922F6AE1809B449C4430C86EF591814325006537AAD0D74C29CFFA58057C89550CCFF119948A60B8EB64D11AF1280DE3653BF77463B757A2B3705E6C413132C5242CE989AA0F172CD28438FCBB6ACF058995D0DD815B9397935592A5A54FFF8FB46EBBD8D4B1676D91A4A4F6C832FF1050FE55BCDDF1184CD4382CE12E30ADD84CD4C36B4A0E 1,1,0,4096 predictor::https://www.googletagservices.com/tag/js/gpt.js 1,1,0,4096 predictor::http://pagead2.googlesyndication.com/pagead/osd.js 1,1,0,4096 predictor::https://s.update.rubiconproject.com/2/873648/analytics.js?si=103056&di=www.dummies.com&ap=&dm=15&pi=484154&ti=ce96d9ed-1a76-4c0d-a0ca-47ac515f2e5e&r5=Mozilla%2F5.0%20(X11%3B%20Ubuntu%3B%20Linux%20x86_64%3B%20rv%3A56.0)%20Gecko%2F20100101%20Firefox%2F56.0&dt=8736481428691810142000 1,1,0,4096   Å©

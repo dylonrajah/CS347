@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Getting Around the Command Line - CS Support</title>
+<meta name="generator" content="MediaWiki 1.25.2" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="CS Support (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://support.cs.wwu.edu/api.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="/index.php/Getting_Around_the_Command_Line" />
+<link rel="alternate" type="application/atom+xml" title="CS Support Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://support.cs.wwu.edu/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: support:resourceloader:filter:minify-css:7:b7425572cddd157c1afe6f530d610cd5 */</style>
+<script src="https://support.cs.wwu.edu/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Getting_Around_the_Command_Line","wgTitle":"Getting Around the Command Line","wgCurRevisionId":601,"wgRevisionId":601,"wgArticleId":45,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Getting_Around_the_Command_Line","wgRelevantArticleId":45,"wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"publish":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});
+/* cache key: support:resourceloader:filter:minify-js:7:a5c52c063dc436c1ca7c9f456936a5e9 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Getting_Around_the_Command_Line skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Getting Around the Command Line</h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From CS Support</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Command_Line"><span class="tocnumber">1</span> <span class="toctext">Command Line</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Basic_Use"><span class="tocnumber">1.1</span> <span class="toctext">Basic Use</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Navigation"><span class="tocnumber">1.1.1</span> <span class="toctext">Navigation</span></a>
+<ul>
+<li class="toclevel-4 tocsection-4"><a href="#Commands"><span class="tocnumber">1.1.1.1</span> <span class="toctext">Commands</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#What.27s_in_Your_Directory"><span class="tocnumber">1.2</span> <span class="toctext">What's in Your Directory</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Permissions"><span class="tocnumber">1.2.1</span> <span class="toctext">Permissions</span></a>
+<ul>
+<li class="toclevel-4 tocsection-7"><a href="#Changing_Permissions"><span class="tocnumber">1.2.1.1</span> <span class="toctext">Changing Permissions</span></a>
+<ul>
+<li class="toclevel-5 tocsection-8"><a href="#Octal"><span class="tocnumber">1.2.1.1.1</span> <span class="toctext">Octal</span></a></li>
+<li class="toclevel-5 tocsection-9"><a href="#Symbolic"><span class="tocnumber">1.2.1.1.2</span> <span class="toctext">Symbolic</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-10"><a href="#Dot_Files"><span class="tocnumber">1.2.2</span> <span class="toctext">Dot Files</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Advanced_Use"><span class="tocnumber">1.3</span> <span class="toctext">Advanced Use</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Text_Editors"><span class="tocnumber">1.3.1</span> <span class="toctext">Text Editors</span></a>
+<ul>
+<li class="toclevel-4 tocsection-13"><a href="#Vim"><span class="tocnumber">1.3.1.1</span> <span class="toctext">Vim</span></a></li>
+<li class="toclevel-4 tocsection-14"><a href="#Emacs"><span class="tocnumber">1.3.1.2</span> <span class="toctext">Emacs</span></a></li>
+<li class="toclevel-4 tocsection-15"><a href="#Atom"><span class="tocnumber">1.3.1.3</span> <span class="toctext">Atom</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-16"><a href="#Tar_Compression"><span class="tocnumber">1.3.2</span> <span class="toctext">Tar Compression</span></a>
+<ul>
+<li class="toclevel-4 tocsection-17"><a href="#Compression"><span class="tocnumber">1.3.2.1</span> <span class="toctext">Compression</span></a></li>
+<li class="toclevel-4 tocsection-18"><a href="#Decompression"><span class="tocnumber">1.3.2.2</span> <span class="toctext">Decompression</span></a></li>
+<li class="toclevel-4 tocsection-19"><a href="#Other_Flags"><span class="tocnumber">1.3.2.3</span> <span class="toctext">Other Flags</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-20"><a href="#Zip_Compression"><span class="tocnumber">1.3.3</span> <span class="toctext">Zip Compression</span></a>
+<ul>
+<li class="toclevel-4 tocsection-21"><a href="#Compression_2"><span class="tocnumber">1.3.3.1</span> <span class="toctext">Compression</span></a></li>
+<li class="toclevel-4 tocsection-22"><a href="#Decompression_2"><span class="tocnumber">1.3.3.2</span> <span class="toctext">Decompression</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-23"><a href="#SSH"><span class="tocnumber">1.3.4</span> <span class="toctext">SSH</span></a>
+<ul>
+<li class="toclevel-4 tocsection-24"><a href="#Accessing_Linux_with_SSH"><span class="tocnumber">1.3.4.1</span> <span class="toctext">Accessing Linux with SSH</span></a></li>
+<li class="toclevel-4 tocsection-25"><a href="#SSH_Config"><span class="tocnumber">1.3.4.2</span> <span class="toctext">SSH Config</span></a></li>
+<li class="toclevel-4 tocsection-26"><a href="#Getting_Files_with_SCP"><span class="tocnumber">1.3.4.3</span> <span class="toctext">Getting Files with SCP</span></a></li>
+<li class="toclevel-4 tocsection-27"><a href="#SSH_Keys"><span class="tocnumber">1.3.4.4</span> <span class="toctext">SSH Keys</span></a>
+<ul>
+<li class="toclevel-5 tocsection-28"><a href="#Other_Key_Formats"><span class="tocnumber">1.3.4.4.1</span> <span class="toctext">Other Key Formats</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4 tocsection-29"><a href="#Extra.21"><span class="tocnumber">1.3.4.5</span> <span class="toctext">Extra!</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-30"><a href="#Virtual_Environments"><span class="tocnumber">1.3.5</span> <span class="toctext">Virtual Environments</span></a>
+<ul>
+<li class="toclevel-4 tocsection-31"><a href="#virtualenv_command"><span class="tocnumber">1.3.5.1</span> <span class="toctext">virtualenv command</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Command_Line">Command Line</span></h1>
+<p>The command line is an incredibly powerful tool to navigate and use your computer, but it can be a bit daunting at first.  This page will show you the basics you need to get started.
+</p>
+<h2><span class="mw-headline" id="Basic_Use">Basic Use</span></h2>
+<h3><span class="mw-headline" id="Navigation">Navigation</span></h3>
+<h4><span class="mw-headline" id="Commands">Commands</span></h4>
+<p>Linux has many useful and powerful tools right in the command line.  In this sections we have provided examples for the most common commands you'll need but you can find more in depth explanations of most Linux commands by using the <code>man</code> command. For example, <code>man mv</code> will open a page in your terminal showing usage and explanations of every option flag you can give the <code>mv</code> command.
+</p>
+<ul><li><code>ls</code> - list the files and directories inside your current directory.</li></ul>
+<pre>ls
+</pre>
+<p><a href="/index.php/File:Ls_command.png" class="image"><img alt="Ls command.png" src="/images/2/23/Ls_command.png" width="555" height="59" /></a>
+</p><p>For this command, you do not need any other parameters for it to work. However, you may want to list items differently. One way of doing this is by typing <code>ls -l</code>. This will present the same files you find with a simple <code>ls</code> in a list format including more information. What you see when you run this command may be daunting before you know what this is showing you. For now, we'll focus on the easy list looking format of the names to the far right. If the first character shown on the far left is a d, then the name you are looking at is a directory (aka, a folder).  For more information on what the rest of the output means, see <a href="/index.php/Getting_Around_the_Command_Line#Permissions" title="Getting Around the Command Line"> Permissions</a>.
+</p><p><a href="/index.php/File:Ls-l.png" class="image"><img alt="Ls-l.png" src="/images/6/61/Ls-l.png" width="657" height="188" /></a>
+</p><p>Another command you can use to see everything you have in your folder (including <b>hidden files</b>) is the <code>ls -a</code> command.
+</p><p><a href="/index.php/File:Ls_-a.png" class="image"><img alt="Ls -a.png" src="/images/1/18/Ls_-a.png" width="641" height="102" /></a>
+</p><p>You may have seen another command flag <code>-la</code> used with <code>ls</code>. This combines the two previously explained flags, and will list all files and folders in the directory you are in. The first two folders shown are "." and ".." and this signifies the your current directory (".") and your parent or previous directory (".."). This list also includes <b>hidden files</b>, which are denoted by a "." at the front of a file name. Explanation on what these are can be found later in this section.
+</p><p><a href="/index.php/File:Ls-la.png" class="image"><img alt="Ls-la.png" src="/images/4/4a/Ls-la.png" width="657" height="409" /></a>
+</p>
+<ul><li><code>pwd</code> - print the name of your current working directory.</li></ul>
+<ul><li><code>cd</code> - change directory, move into other folders so that you can access the information there.</li></ul>
+<pre>cd folderName
+</pre>
+<p>For example, <code>cd ./folderName</code> will move location from your current location (signified by the dot ".") to the location of <code>folderName</code>. However, if you are already in the directory of the folder you want to be in, you can also simply write <code>cd folderName</code>.
+</p><p><a href="/index.php/File:Navigation.png" class="image"><img alt="Navigation.png" src="/images/4/4f/Navigation.png" width="332" height="211" /></a>
+</p><p>On the other hand, if you're looking to move into a folder that is beyond the folder you're already in, you can type out the specific directory path. For example, you might type something like this <code>cd /home/folderName</code>. Another way of getting to a completely different folder, you can <code>cd</code> back to the folder you would like to move from. To accomplish this, you would change your directory back to the previous folder you came from by typing <code> cd ..</code>.
+</p><p><a href="/index.php/File:AdvancedNavigation.png" class="image"><img alt="AdvancedNavigation.png" src="/images/d/d2/AdvancedNavigation.png" width="592" height="154" /></a>
+</p>
+<ul><li><code>mkdir</code> - make directory, make a new folder.</li></ul>
+<p><a href="/index.php/File:Mkdir.png" class="image"><img alt="Mkdir.png" src="/images/4/4f/Mkdir.png" width="553" height="119" /></a>
+</p>
+<ul><li><code>mv</code> - move a file or directory from one place to another. Can also be used to rename a file.</li></ul>
+<pre>mv &lt;location of source&gt; &lt;location of destination&gt;
+</pre>
+<p><a href="/index.php/File:MoveFolder.png" class="image"><img alt="MoveFolder.png" src="/images/8/84/MoveFolder.png" width="726" height="190" /></a>
+</p><p>And an example of using the <code>mv</code> command to rename a file.
+</p><p><a href="/index.php/File:Rename.png" class="image"><img alt="Rename.png" src="/images/d/d4/Rename.png" width="1008" height="153" /></a>
+</p>
+<ul><li><code>rm</code> - remove file or directory as described by telling the command line the location of the file or directory you would like to remove.</li></ul>
+<p>To remove a file, simply type
+</p>
+<pre>rm filename.extenstion
+</pre>
+<p>To remove a directory will require a flag, depending on whether you have information in the directory already. While the following line works only on empty directories, it might be nice for you to see if you're about to lose something important, so type
+</p>
+<pre>rm -d directory
+</pre>
+<p>This will give a warning if there is anything in your folder and then you have the chance to go in and see if you truly want it all removed. If you're positive about all the information going away, one way to do it is
+</p>
+<pre>rm -r directory 
+</pre>
+<p><a href="/index.php/File:Removing.png" class="image"><img alt="Removing.png" src="/images/a/a5/Removing.png" width="463" height="139" /></a>
+</p><p>However, this is just one way. In fact, many of these commands are only one way of accomplishing a task. This is just to get you started but there are boundless nuances in accomplishing a task.
+</p>
+<pre>[command] *.[file extension] 
+</pre>
+<p>The wildcard character is used to call a command on specific files. For example when you say <code> ls *.docx</code> that means you want to list all and only files of type <code>.docx</code>
+</p><p><a href="/index.php/File:Wildcardex1.png" class="image"><img alt="Wildcardex1.png" src="/images/2/20/Wildcardex1.png" width="1172" height="173" /></a>
+</p><p>You can also use this character to call commands on filenames.
+</p><p><a href="/index.php/File:Wildcardthename.png" class="image"><img alt="Wildcardthename.png" src="/images/c/cf/Wildcardthename.png" width="593" height="172" /></a>
+</p>
+<pre>cp &lt;file source&gt; &lt;file destination&gt;
+</pre>
+<p>With the <code>cp</code> command you can copy files from the command line from one folder to another. Here we have an example of using the command with the wildcard.
+</p><p><a href="/index.php/File:Cp.png" class="image"><img alt="Cp.png" src="/images/e/ec/Cp.png" width="1414" height="375" /></a>
+</p>
+<h2><span class="mw-headline" id="What.27s_in_Your_Directory">What's in Your Directory</span></h2>
+<p>The purpose of this section is to understand what you might find as you navigate around in your terminal.
+</p>
+<h3><span class="mw-headline" id="Permissions">Permissions</span></h3>
+<p>If you recall from the <a href="/index.php/Getting_Around_the_Command_Line#Basic_Use" title="Getting Around the Command Line"> Basic Use</a> section, the <code>ls -l</code> and <code>ls -la</code> commands have a bunch of seemingly random letters and things:
+</p><p><a href="/index.php/File:Ls-l.png" class="image"><img alt="Ls-l.png" src="/images/6/61/Ls-l.png" width="657" height="188" /></a>
+</p><p>All of these are important to understand to understand permissions, especially the first block of letters and dashes.
+</p><p>Let's take a look at the first line and break it down:
+</p><p><a href="/index.php/File:Ls-l_explain.png" class="image"><img alt="Ls-l explain.png" src="/images/a/a8/Ls-l_explain.png" width="573" height="49" /></a>
+</p>
+<ul><li> The first grouping of letters (A-D) is the file type and the <b>r</b>ead/<b>w</b>rite/e<b>x</b>ecute permissions:
+<ul><li> A: The file type
+<ul><li> <code>d</code>: directory (which this example is)</li>
+<li> <code>-</code>: regular file (like a <code>.txt</code>)</li>
+<li> <code>l</code>: symbolic link (like a shortcut on your desktop)</li></ul></li>
+<li> B: Owner permissions. Each permissions field has three character positions:
+<ul><li> <code>r</code> if the file is readable; <code>-</code> if it is not </li>
+<li> <code>w</code> if the file is writeable; <code>-</code> if it is not</li>
+<li> <code>x</code> if the file is executable; <code>-</code> if it is not</li></ul></li>
+<li> C: Group permissions.  r/w/x have the same meaning as B</li>
+<li> D: Other permissions.  r/w/x have the same meaning as B</li></ul></li>
+<li> E: Number of links to this location</li>
+<li> F: Owner name (Your username)</li>
+<li> G: Owner group (most likely <code>grp.csci.Students</code>)</li>
+<li> H: File size in bytes</li>
+<li> I: Date modified</li>
+<li> J: File/directory name</li></ul>
+<h4><span class="mw-headline" id="Changing_Permissions">Changing Permissions</span></h4>
+<p>If you're having trouble with permissions on a file that you own, you can update the permissions with <code>chmod</code>. <code>chmod</code> is generally called with the following format:
+</p>
+<pre>chmod <b>mode</b> fileName
+</pre>
+<p>Where the <b>mode</b> specifies what permissions get changed and for who. <code>chmod</code> has two ways you can change the permissions: octal notation (numbers 0-7), or symbolic notation (letters for group and permission).  We will cover both ways so you can choose which you prefer.
+</p>
+<h5><span class="mw-headline" id="Octal">Octal</span></h5>
+<p>With octal notation, we have this basic usage:
+</p>
+<pre>chmod ### fileName
+</pre>
+<p>The numbers make up what is called the <b>mode</b> where the first # represents the permission level of the owner, the second for the group, and the third for other.
+</p><p>The numbers breakdown like so:
+</p>
+<ul><li> <code>4</code> - <b>r</b>ead</li>
+<li> <code>2</code> - <b>w</b>rite</li>
+<li> <code>1</code> - e<b>x</b>ecute</li></ul>
+<p>And any combinations of r/w/x can be achieved by adding the numbers.  For example, if I want to give read and execute permissions I would use <code>5</code>.
+</p><p>Therefore:
+</p>
+<pre>chmod 764 fileName
+</pre>
+<p>Changes the permissions for <code>fileName</code> so that the owner has <code>rwx</code>, the group has, <code>rw</code>, and other has <code>r</code> only.
+</p>
+<h5><span class="mw-headline" id="Symbolic">Symbolic</span></h5>
+<p>With symbolic notation, we have this general usage:
+</p>
+<pre>chmod &lt;u|g|o&gt;&lt;=|+|-&gt;&lt;r|w|x&gt; fileName
+</pre>
+<p>This may look confusing, but stick with me.  Let me give you an example:
+</p>
+<pre>chmod ug=wr fileName
+</pre>
+<p>This changes the user's (owner's) and group's permissions to <code>wr</code> for the file <code>filename</code>.  <i>It does not change permissions for other.</i>
+</p><p>The <b>mode</b> in the symbolic notation consists of three sections:
+</p>
+<ol><li> Groups affected.  This can be any combination of u/g/o for <b>u</b>ser (owner), <b>g</b>roup, and <b>o</b>ther respectively.</li>
+<li> Operator. This can be =, + or - where the operator sets, adds, or removes the specified permissions respectively.</li>
+<li> Permissions.  This can be any combination of r/w/x for <b>r</b>ead, <b>w</b>rite, and e<b>x</b>ecute respectively.</li></ol>
+<p>A few examples:
+</p>
+<pre>chmod ug+wx fileName
+</pre>
+<p>adds <b>w</b>rite and e<b>x</b>ecute permissions to the <b>u</b>ser and <b>g</b>roup without affecting the <b>r</b>ead permission or the <b>o</b>ther group; and, 
+</p>
+<pre>chmod go-rwx fileName
+</pre>
+<p>removes all <b>r</b>ead, <b>w</b>rite, and e<b>x</b>ecute permissions for <b>g</b>roup and <b>o</b>ther.
+</p>
+<h3><span class="mw-headline" id="Dot_Files">Dot Files</span></h3>
+<p>When you hear the word "dotfiles" that tends to refer to files or directories that begin with a "." prefix. If you've seen the <a href="/index.php/Git" title="Git"> Git page</a>, you know that when you create a repository your local machine gains a .git folder. These directories or files won't show up if you simply type an <code>ls</code> command as you remember from the basic command section of this survival guide. Dotfiles are also known as hidden directories/files and a UNIX based terminal (like the one in the labs) is configured to recognize that and not list its information.
+</p><p>A dotfile's purpose is to store information that a user doesn't need to access often or at all and will often hold configuration information for various programs. Nearly every application on your computer that you use can be configured to look and act the way you like. Your configurations will go into dotfiles usually ending in "conf" or "rc" like <a href="/index.php/Getting_Around_the_Command_Line#Vim" title="Getting Around the Command Line">Vim's</a> <code>.vimrc</code> or Tmux's <code>.tmux.conf</code>. <b>Note:</b> changing these files could have disastrous results if you change the wrong thing.  We implore you to understand what you are changing before you change it by doing some research into your dotfile.
+</p><p>In an ideal world, there would be a one stop walk-through that tells you exactly what to do to a file to make it do what you want, but the configuration of dotfiles varies depending on the program you are configuring so we suggest you do research on your specific dotfile before diving in to change it. If you notice somebody with a feature you like--whether it's the color text in the terminal or how a certain application in the terminal interacts--ask to see their dotfiles to learn a few things from what they've done and steal a line or two for your own config. There are endless dotfile repositories on GitHub and anyone would be glad to answer your questions.
+</p>
+<h2><span class="mw-headline" id="Advanced_Use">Advanced Use</span></h2>
+<h3><span class="mw-headline" id="Text_Editors">Text Editors</span></h3>
+<p>These handy things let you write and edit code and other text-based things!
+</p>
+<h4><span class="mw-headline" id="Vim">Vim</span></h4>
+<p>Vim is an editor that lives in the terminal accessible with the command <code>vim</code>. Simply use a command like <code>vim filename.txt</code> to open up the file you want to work on. To the right is a cheat sheet for vim keystrokes and commands.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:502px;"><a href="/index.php/File:Vim_cheat_sheet.png" class="image"><img alt="" src="/images/thumb/1/12/Vim_cheat_sheet.png/500px-Vim_cheat_sheet.png" width="500" height="340" class="thumbimage" srcset="/images/thumb/1/12/Vim_cheat_sheet.png/750px-Vim_cheat_sheet.png 1.5x, /images/thumb/1/12/Vim_cheat_sheet.png/1000px-Vim_cheat_sheet.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php/File:Vim_cheat_sheet.png" class="internal" title="Enlarge"></a></div>Click to enlarge</div></div></div>
+<p>Here are some external links that will introduce you to the basic usage of vim:
+</p>
+<ol><li> <a rel="nofollow" class="external text" href="http://www.openvim.com/">Interactive Text-centric Vim tutorial</a></li>
+<li> <a rel="nofollow" class="external text" href="https://vim-adventures.com/">Gameified Vim Tutorial</a></li></ol>
+<p>And here are some external links for anyone who wants to explore advanced vim usages:
+</p>
+<ol><li> <a rel="nofollow" class="external text" href="https://benmccormick.org/2014/07/02/learning-vim-in-2014-vim-as-language/">Vim as a Language</a></li>
+<li> <a rel="nofollow" class="external text" href="https://blog.petrzemek.net/2016/04/06/things-about-vim-i-wish-i-knew-earlier/">Operations and "Motions"</a></li></ol>
+<p>If you find any other helpful links on your quest to understanding vim, feel free to let us know at <a rel="nofollow" class="external text" href="mailto:cs.support@wwu.edu">cs.support@wwu.edu</a>.
+</p>
+<h4><span class="mw-headline" id="Emacs">Emacs</span></h4>
+<p>Emacs is another text editor that lives inside your terminal widely supported by its customizability. Like Vim, Emacs can be either a graphical interface or just an editor right in your terminal. 
+</p><p>According to <a rel="nofollow" class="external text" href="https://www.linux.com/learn/gnu-emacs-101-beginners">this</a> page, emacs is at minimum an interpreter for Lisp, which is a language (or a variation of Lisp) that you'll encounter in department which means you will be able to easily change and configure Emacs to your will. If you need inspiration, <a rel="nofollow" class="external text" href="https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-en.org">this is</a> an article by a self-proclaimed "computer dummy" who learned Emacs in a year.
+</p><p>Here is <a rel="nofollow" class="external text" href="https://www.emacswiki.org/emacs/">Emac's wiki</a> for in depth help.
+</p><p>Please feel free to take a look at our guide on Emacs created through the Peer Lecture Series:
+<a href="/index.php/File:Workshop_Emacs.pdf" title="File:Workshop Emacs.pdf">File:Workshop Emacs.pdf</a>
+</p><p>If you find any other helpful links on your quest to understanding Emacs, feel free to let us know at <a rel="nofollow" class="external text" href="mailto:cs.support@wwu.edu">cs.support@wwu.edu</a>.
+</p>
+<h4><span class="mw-headline" id="Atom">Atom</span></h4>
+<p>Atom is available to you on either Linux or Windows. Atom is useful for converting Markdown plain text into pretty formatted text with <code>Shift + Ctrl + M</code> or just as a decent text editor outside the terminal with other cool package addons.
+</p><p>There's not much to learn about atom, but if you have any questions, consult the docs: <a rel="nofollow" class="external free" href="https://atom.io/docs">https://atom.io/docs</a>
+</p>
+<h3><span class="mw-headline" id="Tar_Compression">Tar Compression</span></h3>
+<p>File and folder compression can be useful for sending lots of files to another person or computer in a convenient archive package.  There are a few different file extensions that you will need to understand to wrap your head around using the <code>tar</code> command in the terminal.
+</p><p>Most common:
+</p>
+<ul><li> <code>.tar</code>: also called a tarball, a <code>.tar</code> archive can contain many files and folders in a single <code>.tar</code> file for easier transport.  This does not compress the files in any way.</li>
+<li> <code>.gz</code>: gzip can only compress a single file and is most often used to further compress a <code>.tar</code> archive into a <code>.tar.gz</code> archive.</li></ul>
+<p>Less common:
+</p>
+<ul><li> <code>.bz2</code> | <code>.bz</code>: similar to gzip, bzip2 only compresses single files and is most often used to further compress <code>.tar</code> archives into <code>.tar.bz2</code> archives.</li>
+<li> <code>.xz</code>: this is generally used for Linux architecture files like kernel archive files. It's slow and resource hungry, but can compress to a smaller size depending on the circumstances. <a href="https://en.wikipedia.org/wiki/xz" class="extiw" title="wikipedia:xz">More info.</a></li></ul>
+<p>Tar compression and decompression can be a doozy, but we're here to help!  The most useful tools you have at your disposal when you're trying to compress or decompress a <code>.tar</code> or <code>.tar.gz</code> file are the <code>man tar</code> manual page and your favorite search engine.
+</p><p>Here are a few basic, useful commands.
+</p>
+<h4><span class="mw-headline" id="Compression">Compression</span></h4>
+<pre>tar -czvf archiveName.tar.gz ~/Desktop/thisFile.txt ~/Downloads/thatFolder moar.jpeg
+</pre>
+<p>This will compress the two files (<code>thisFile.txt</code> and <code>moar.jpeg</code>) and the folder (<code>thatFolder</code>) into an archive named <code>archiveName.tar.gz</code>.
+</p>
+<ul><li> <code>-c</code> will create the tarball archive.</li>
+<li> <code>-z</code> will tell <code>tar</code> that we will compress the tarball with the <code>.gz</code> extension.</li>
+<li> <code>-v</code> will output all file names put into the archive to the terminal.</li>
+<li> <code>-f</code> will name the output archive.</li></ul>
+<h4><span class="mw-headline" id="Decompression">Decompression</span></h4>
+<pre>tar -xzvf anotherArchive.tar.gz
+</pre>
+<p>This will extract all the files and folders from <code>anotherArchive</code> into the current working directory.
+</p>
+<ul><li> <code>-x</code>: will extract from the archive.</li></ul>
+<p>If you want to extract the archive contents into a new folder, you can add the <code>-C</code> flag like so:
+</p>
+<pre>tar -xzvf anotherArchive.tar.gz -C folderToExtractTo
+</pre>
+<p>This command will extract the contents of <code>anotherArchive.tar.gz</code> to a new folder <code>folderToExtractTo</code>.
+</p>
+<h4><span class="mw-headline" id="Other_Flags">Other Flags</span></h4>
+<ul><li> <code>-j</code>: will tell <code>tar</code> that we will compress the tarball with the <code>.bz2</code> extension as in <code>.tar.bz2</code> or just <code>.bz2</code>.</li>
+<li> <code>-J</code>: will tell <code>tar</code> that we will compress the tarball with the <code>.xz</code> extension.</li></ul>
+<h3><span class="mw-headline" id="Zip_Compression">Zip Compression</span></h3>
+<p>Like a <code>.tar.gz</code>, a <code>.zip</code> file can compress many files and folders into one archive to make sending or storing lots of data easier.
+</p><p>Creating a <code>.zip</code> from the command is much more simple than creating tar files:
+</p>
+<h4><span class="mw-headline" id="Compression_2">Compression</span></h4>
+<pre>zip archiveName.zip thisFile.py ~/Documents/thatDocument.docx
+</pre>
+<p>This will create an archive named <code>archiveName.zip</code> containing <code>thisFile.py</code> from the working directory and <code>thatDocument.docx</code> from the Documents folder.
+</p><p>If the archive will contain a folder you will need the <code>-r</code> flag.
+</p>
+<pre>zip -r folderArchiveName.zip ~/Documents/ thisFile.java
+</pre>
+<p>This will create an archive named <code>folderArchiveName.zip</code> containing the entire Documents folder and <code>thisFile.java</code> from the working directory.
+</p>
+<h4><span class="mw-headline" id="Decompression_2">Decompression</span></h4>
+<pre>unzip archiveName.zip
+</pre>
+<p>This simple command will extract and decompress the contents of <code>archiveName.zip</code> into the current directory.  The archive will remain the same.
+</p>
+<h3><span class="mw-headline" id="SSH">SSH</span></h3>
+<p>SSH stands for <b>S</b>ecure <b>Sh</b>ell.  It is used to establish a secure connection to an account on another computer to access files or run programs without physical access to the machine.
+</p><p>At Western, we allow you to <code>ssh</code> into our Linux COW (Cluster Of Workstations) from anywhere inside or outside the University to access the files in your account's <a href="/index.php/Accounts,_Passwords,_and_Profile_Storage" title="Accounts, Passwords, and Profile Storage"> home directory</a>.
+</p>
+<h4><span class="mw-headline" id="Accessing_Linux_with_SSH">Accessing Linux with SSH</span></h4>
+<p>By default, SSH will use port <code>22</code> for <a rel="nofollow" class="external text" href="https://www.ssh.com/ssh/port">reasons</a>.  The CS department uses port <code>922</code> for a little additional security.  This means the <code>ssh</code> command will need the <code>-p</code> flag to specify port <code>922</code>.
+</p>
+<pre>ssh -p 922 ${username}@linux.cs.wwu.edu
+</pre>
+<p>Where <code>${username}</code> is your CS account username.
+</p><p>Running this command in your terminal will prompt for your password and after authentication, will allow you to interact with the file system as though you were in a terminal in one of the CS labs.
+</p>
+<h4><span class="mw-headline" id="SSH_Config">SSH Config</span></h4>
+<p>If you find typing the whole <code>ssh -p 922 ${username}@linux.cs.wwu.edu</code> line into your terminal exhausting, there's a perfect solution for you: SSH configuration!
+</p><p>SSH configuration will allow you to use any shorthand alias to connect to a remote server, e.g. <code>ssh linux</code>. Your ssh config file is found at <code>~/.ssh/config</code>.
+</p><p>Here is an example of an ssh config file for <code>linux.cs.wwu.edu</code>:
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="/index.php/File:SshConfig.png" class="image"><img alt="" src="/images/thumb/9/97/SshConfig.png/300px-SshConfig.png" width="300" height="85" class="thumbimage" srcset="/images/9/97/SshConfig.png 1.5x, /images/9/97/SshConfig.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php/File:SshConfig.png" class="internal" title="Enlarge"></a></div>SSH config for linux.cs.wwu.edu</div></div></div>
+<p><b>Note:</b>
+</p>
+<ul><li> You can call the <code>Host</code> anything, it doesn't have to be linux.  It is just your alias for the <code>ssh</code> command.</li>
+<li> Replace <code>${username}</code> with your username or the account you have permission to use.</li></ul>
+<h4><span class="mw-headline" id="Getting_Files_with_SCP">Getting Files with SCP</span></h4>
+<p>To copy files from a remote machine that you can access with <code>ssh</code>, you can use Secure Copy, <code>scp</code>.
+</p><p><b>From your local machine</b>, use the following command:
+</p>
+<pre>scp -P 922 ${username}@linux.cs.wwu.edu:~/document.txt ~/Documents/
+</pre>
+<p>Assuming this file exists, this command will copy the file <code>document.txt</code> from your CS account <a rel="nofollow" class="external text" href="https://support.cs.wwu.edu/index.php/Accounts,_Passwords,_and_Profile_Storage#Understanding_CS_Account_Storage">home directory</a> (denoted with <code>~</code>) to your local machine's <code>Documents</code> directory.
+</p><p>Notice that <code>scp</code> uses a capital P for its port option flag.
+</p><p>This can also work in the opposite direction: copying files from your local computer to a remote destination.
+</p>
+<pre>scp -P 922 ~/Documents/document.txt ${username}@linux.cs.wwu.edu:~/copied.txt
+</pre>
+<p>This command will copy the file <code>document.txt</code> from your local machine to the home directory of your CS account renamed to <code>copied.txt</code>.
+</p>
+<h4><span class="mw-headline" id="SSH_Keys">SSH Keys</span></h4>
+<p>Using an SSH key will make your login more secure.  This section will give you the skinny on SSH keys and key usage.  At the end of this section will be a link to a more in depth description on SSH security.
+</p><p>SSH keys are generated in a <a href="https://en.wikipedia.org/wiki/Public-key_cryptography" class="extiw" title="wikipedia:Public-key cryptography">public/private key pair</a>.   When you ssh into another machine, it sends your public key to that machine's <code>~/.ssh/authorized_keys</code> file.  When you connect to that machine later, it checks your private key against the public key it has through cryptographic algorithms to verify your identity.
+</p><p><b>Your private key should never be given out to ANYBODY!</b>
+</p><p>Western uses <a href="https://en.wikipedia.org/wiki/EdDSA" class="extiw" title="wikipedia:EdDSA">EdDSA</a> in the form of Ed25519 for our key encryption method.
+To generate the key pair use this command in the terminal:
+</p>
+<pre>ssh-keygen -t ed25519 -C "$(whoami)@$(hostname) $(date -I)"
+</pre>
+<p>This command will ask for a passphrase and then generate two files in the <code>~/.ssh</code> directory: <code>id_ed25519</code> and <code>id_ed25519.pub</code>.
+The former is your private key <b>(Keep it secret! Keep it safe!)</b>, and the latter is your public key signified with the <code>.pub</code> extension.
+</p><p>Here is an example of what the interaction will look like:
+</p><p><a href="/index.php/File:Ssh-keygen.png" class="image"><img alt="Ssh-keygen.png" src="/images/9/99/Ssh-keygen.png" width="699" height="373" /></a>
+</p>
+<ul><li><i><b>note</b></i>: <i>the password field appears blank because password characters are hidden in the terminal.</i></li>
+<li><i><b>also note</b></i>:<i> if you leave the <code>Enter the file in which to save the key</code> line blank, it will default to the path in the parentheses.</i></li></ul>
+<h5><span class="mw-headline" id="Other_Key_Formats">Other Key Formats</span></h5>
+<p>While all of the Computer Science department's SSH servers accept newer key formats like <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/EdDSA#Ed25519">Ed25519</a> this is not universally true. Some services outside the university might not. You may wish to consider another algorithm like <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29">RSA</a> or <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm">ECDSA</a>. You can generate those types of keys by changing which argument you give to <code>ssh-keygen</code>'s <code>-t</code> flag. For example, if you wanted to generate a 2048-bit RSA key you would do
+</p>
+<pre>ssh-keygen -t rsa -b 2048 -C "$(whoami)@$(hostname) $(date -I)"
+</pre>
+<p>You are now all set to use these keys!
+</p><p><a href="/index.php/Setting_up_SSH_keys_in_Unix_Linux" title="Setting up SSH keys in Unix Linux"> Here is a more in depth page if you need more info.</a>
+</p>
+<h4><span class="mw-headline" id="Extra.21">Extra!</span></h4>
+<p><a href="/index.php/Using_SSH_Agent" title="Using SSH Agent">Using SSH Agent</a>
+</p><p><a href="/index.php/Tunneling_MySQL_ports_through_SSH" title="Tunneling MySQL ports through SSH">Tunneling MySQL ports through SSH</a>
+</p>
+<h3><span class="mw-headline" id="Virtual_Environments">Virtual Environments</span></h3>
+<p>In the CS department, we have some permissions in place to block installation of many outside programs and modules without admin privileges to avoid bloat and viruses on the computers.  Using python  Virtual environments can be helpful when developing a program that you need more permissions for.  In a virtualenv, you can <code>pip install</code> whatever you want, including the program you're writing if you have that set up.
+</p>
+<h4><span class="mw-headline" id="virtualenv_command">virtualenv command</span></h4>
+<p>1. To start, you need to build a virtual environment.  This command will create a folder called <code>ENV</code> containing the virtual environment files.  <code>ENV</code> can be any name you want.
+</p>
+<pre>virtualenv ENV
+</pre>
+<p>2. Before you can <code>pip install</code> anything, you have to activate the virtualenv to work in it.  Once you activate the virtual environment, you can use it from anywhere.
+</p>
+<pre>source ENV/bin/activate
+</pre>
+<p>3. Deactivate to stop working in it
+</p>
+<pre>deactivate
+</pre>
+<p>More info can be found in virtualenv's <a rel="nofollow" class="external text" href="https://virtualenv.pypa.io/en/stable/userguide/">user guide</a>.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.257 seconds
+Real time usage: 0.309 seconds
+Preprocessor visited node count: 122/1000000
+Preprocessor generated node count: 128/1000000
+Postâ€expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key support:pcache:idhash:45-0!*!0!!en!5!* and timestamp 20171003000201 and revision id 601
+ -->
+</div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://support.cs.wwu.edu/index.php?title=Getting_Around_the_Command_Line&amp;oldid=601">https://support.cs.wwu.edu/index.php?title=Getting_Around_the_Command_Line&amp;oldid=601</a>"					</div>
+													<div id='catlinks' class='catlinks catlinks-allhidden'></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Getting+Around+the+Command+Line" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/index.php/Getting_Around_the_Command_Line"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Getting_Around_the_Command_Line&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/index.php/Getting_Around_the_Command_Line" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Getting_Around_the_Command_Line&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Getting_Around_the_Command_Line&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search CS Support [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/index.php/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+													<li id="n-Survival-Guide"><a href="/index.php/CS_Technical_Survival_Guide">Survival Guide</a></li>
+													<li id="n-recentchanges"><a href="/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+													<li id="n-randompage"><a href="/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/Getting_Around_the_Command_Line" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="/index.php/Special:RecentChangesLinked/Getting_Around_the_Command_Line" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+													<li id="t-specialpages"><a href="/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+													<li id="t-print"><a href="/index.php?title=Getting_Around_the_Command_Line&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+													<li id="t-permalink"><a href="/index.php?title=Getting_Around_the_Command_Line&amp;oldid=601" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="/index.php?title=Getting_Around_the_Command_Line&amp;action=info" title="More information about this page">Page information</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 22 September 2017, at 18:42.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/index.php/CS_Support:Privacy_policy" title="CS Support:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/index.php/CS_Support:About" title="CS Support:About">About CS Support</a></li>
+											<li id="footer-places-disclaimer"><a href="/index.php/CS_Support:General_disclaimer" title="CS Support:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+															<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>if(window.jQuery)jQuery.ready();</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":178});
+}</script>
+	</body>
+</html>
+öj_ë\B      YÓª1YÓª1>Cb       E    :https://support.cs.wwu.edu/index.php/Getting_Around_the_Command_Line necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAWGMIIFgjCCBGqgAwIBAgIQFL2534URHqbnbhvEWF4nETANBgkqhkiG9w0BAQsFADB2MQswCQYDVQQGEwJVUzELMAkGA1UECBMCTUkxEjAQBgNVBAcTCUFubiBBcmJvcjESMBAGA1UEChMJSW50ZXJuZXQyMREwDwYDVQQLEwhJbkNvbW1vbjEfMB0GA1UEAxMWSW5Db21tb24gUlNBIFNlcnZlciBDQTAeFw0xNTEyMTcwMDAwMDBaFw0xOTAxMDYyMzU5NTlaMIG5MQswCQYDVQQGEwJVUzEOMAwGA1UEERMFOTgyMjUxCzAJBgNVBAgTAldBMRMwEQYDVQQHEwpCZWxsaW5naGFtMRgwFgYDVQQJEw81MTYgSGlnaCBTdHJlZXQxJjAkBgNVBAoTHVdlc3Rlcm4gV2FzaGluZ3RvbiBVbml2ZXJzaXR5MRkwFwYDVQQLExBDb21wdXRlciBTY2llbmNlMRswGQYDVQQDExJzdXBwb3J0LmNzLnd3dS5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDv0RJOJ6n+wJ9UzB17WQaMFUPYMJDaPJik42OwjbCQKUOG2ZZAB1np41L3/UTVwh22XZBslPjFAZ/AAVI9bEuTMHbGu87IOyB+fpR5ov1kEjwJN1/nVE57dvNqZ5gPxO9PEzAWRIDp4O4utxJeRaPp8Mvi7b9x6H0bNOe/fTWY15Vx5qJ/cFNZtzjiIjjOq5KI+Zc13GY+Pe/mbeMCyNzUHJLEwCr+1bWWXVBExwqukDkUoaX6OtAvo130NTuzehB8CQ0d1KYPVQqgmnyVwKa0Qw2ak8thJLOCJ+xaDp88DHDA5W8yNaEY+FQpEpEp/tPNwzoMksBv3c93gYZ5NxRZAgMBAAGjggHGMIIBwjAfBgNVHSMEGDAWgBQeBaN3j2yW4luHS6a0hqxxAAznODAdBgNVHQ4EFgQU9KeUGfKsTDV8vekw9dcLfdg7f2AwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMGcGA1UdIARgMF4wUgYMKwYBBAGuIwEEAwEBMEIwQAYIKwYBBQUHAgEWNGh0dHBzOi8vd3d3LmluY29tbW9uLm9yZy9jZXJ0L3JlcG9zaXRvcnkvY3BzX3NzbC5wZGYwCAYGZ4EMAQICMEQGA1UdHwQ9MDswOaA3oDWGM2h0dHA6Ly9jcmwuaW5jb21tb24tcnNhLm9yZy9JbkNvbW1vblJTQVNlcnZlckNBLmNybDB1BggrBgEFBQcBAQRpMGcwPgYIKwYBBQUHMAKGMmh0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9JbkNvbW1vblJTQVNlcnZlckNBXzIuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMB0GA1UdEQQWMBSCEnN1cHBvcnQuY3Mud3d1LmVkdTANBgkqhkiG9w0BAQsFAAOCAQEAKCOI15Q51XLtb8v6lv6df18Q8kIRKQEP2YBVtZTP1R8Gf9vbgTaxrmN6gZaqrh4EvScyOR+Sv7NOWoaHTPNgm1eYXpyIm3OCOgfOSjhkYdCU4F9hhburHKXswFEH3QDW/uZlFvLLF12ztjvcWgsi1jtJEXsjdQevTcZadSGrl7pHPf4i1syHfNFCoamE+awV7SUeGVABrXA4ywQlqpDhfbJ9K/Al0b3TCx3B6yHPI6IPnC/vCx+LBPNvdHeJ1gZCoHGTPwL4DLA1Iv/N4RQIkidbtuOZQTnycHYxBY9gB4IRA65n0jUT+ptpW29+4T/Y4NezGXx5CuvJxUwBV9TJBsAwAQMAAAAAAQEAAAAA request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/1.1 200 OK
+X-Powered-By: PHP/5.6.13
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Last-Modified: Fri, 22 Sep 2017 18:43:06 GMT
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 03 Oct 2017 15:18:09 GMT
+Server: Apache/2.4.16 (FreeBSD) OpenSSL/1.0.1s-freebsd PHP/5.6.13
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Vary: Accept-Encoding,Cookie
+ original-response-headers Date: Tue, 03 Oct 2017 15:17:45 GMT
+Server: Apache/2.4.16 (FreeBSD) OpenSSL/1.0.1s-freebsd PHP/5.6.13
+X-Powered-By: PHP/5.6.13
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Vary: Accept-Encoding,Cookie
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Last-Modified: Fri, 22 Sep 2017 18:43:06 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+ uncompressed-len 0 predictor::resource-count 24 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&only=styles&skin=vector&* 1,2,1507043889,12288 net-response-time-onstart 223 net-response-time-onstop 252 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=startup&only=scripts&skin=vector&* 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/2/23/Ls_command.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/6/61/Ls-l.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/1/18/Ls_-a.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/4/4a/Ls-la.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/4/4f/Navigation.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/d/d2/AdvancedNavigation.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/4/4f/Mkdir.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/8/84/MoveFolder.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/d/d4/Rename.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/a/a5/Removing.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/2/20/Wildcardex1.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/c/cf/Wildcardthename.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/e/ec/Cp.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/a/a8/Ls-l_explain.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/thumb/1/12/Vim_cheat_sheet.png/500px-Vim_cheat_sheet.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/thumb/9/97/SshConfig.png/300px-SshConfig.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/images/9/99/Ssh-keygen.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/resources/assets/poweredby_mediawiki_88x31.png 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=jquery%2Cmediawiki&only=scripts&skin=vector&version=20151102T203008Z 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=jquery.accessKeyLabel%2Cclient%2CmwExtension%2CtabIndex%2Cthrottle-debounce%7Cmediawiki.legacy.ajax%2Cwikibits%7Cmediawiki.notify%2Cutil%7Cmediawiki.page.startup%7Cskins.vector.js&skin=vector&version=20161020T172750Z&* 1,2,1507043889,12288 predictor::https://img.shields.io/badge/CS-Support-blue.svg?style=flat 1,2,1507043889,12288 predictor::https://support.cs.wwu.edu/load.php?debug=false&lang=en&modules=jquery.checkboxShiftClick%2Ccookie%2CgetAttrs%2ChighlightText%2CmakeCollapsible%2Cmw-jump%2Cplaceholder%2Csuggestions%7Cmediawiki.action.view.postEdit%7Cmediawiki.api%2Ccldr%2Ccookie%2CjqueryMsg%2Clanguage%2CsearchSuggest%2Ctemplate%2Ctoc%2Cuser%7Cmediawiki.language.data%2Cinit%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cuser.defaults&skin=vector&version=20161020T172751Z&* 1,2,1507043889,12288   ¼˜

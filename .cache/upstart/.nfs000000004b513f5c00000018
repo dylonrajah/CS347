@@ -1,0 +1,18 @@
+
+(process:27824): indicator-sound-WARNING **: volume-control-pulse.vala:735: unable to get pulse unix socket: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.PulseAudio1 was not provided by any .service files
+
+(process:27824): indicator-sound-WARNING **: Name lost or unable to acquire bus: com.canonical.indicator.sound
+
+(process:27824): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(process:27824): GLib-GIO-CRITICAL **: Error while sending AddMatch() message: The connection is closed
+
+(process:27824): GLib-GIO-CRITICAL **: Error while sending AddMatch() message: The connection is closed
+
+(process:27824): GLib-GIO-CRITICAL **: Error while sending AddMatch() message: The connection is closed
+
+(process:27824): GLib-GIO-CRITICAL **: Error while sending AddMatch() message: The connection is closed
+
+(process:4055): indicator-sound-WARNING **: volume-control-pulse.vala:735: unable to get pulse unix socket: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.PulseAudio1 was not provided by any .service files
+
+(process:4055): indicator-sound-WARNING **: accounts-service-access.vala:218: unable to sync volume 0.000946 to AccountsService: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: No such interface 'com.ubuntu.AccountsService.Sound'
