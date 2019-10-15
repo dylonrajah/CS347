@@ -1,0 +1,155 @@
+
+  348  pwd
+  349  ls
+  350  cd repos
+  351  mkdir CS241-Lab1
+  352  mkdir directory-test
+  353  rm -r directory-test
+  354  touch test.jaava
+  355  rm test.jaava
+  356  cd CS241-:ab1
+  357  cd CS241-Lab1
+  358  ls
+  359  git clone https://github.com/WWU-241-CSCI/lab1-dylonrajah.git
+  360  git clone https://github.com/WWU-241-CSCI/lab1-dylonrajah.git
+  361  ls
+  362  cls
+  363  ls
+  364  cd lab1-dylonrajah
+  365  git config --global user.name dylonrajah
+  366  git config -- global user.email rajahd2@wwu.edu
+  367  git config --global user.email rajahd2@wwu.edu
+  368  touch writeup.txt
+  369  git add writeup.txt
+  370  git commit -m "Added empty writeup"
+  371  git push
+  372  git add writeup.txt
+  373  gedit writeup.txt
+  374  git add writeup.txt
+  375  git commit -m "Added Part 1 (names) to writeup
+  376  "
+  377  git push
+  378  gedit writeup.txt
+  379  git commmit -m "Added Part2 (Hobby) to writeup
+  380  "
+  381  fit commit -m "Added Part2 (Hobby) to writeup"
+  382  git commit -m "Added Part2 (Hobby) to writeup"
+  383  git push
+  384  gedit writeup.txt
+  385  git commit -m "Added Part2"
+  386  touch username.txt
+  387  ls
+  388  gedit username.txt
+  389  commit -m "Added Info"
+  390  git commit -m "Added Info"
+  391  git push username.txt
+  392  ls
+  393  cd username.txt
+  394  git checkout
+  395  git reset
+  396  git blame
+  397  git log
+  398  uit
+  399  git branch question3
+  400  gedit writeup.txt
+  401  git add writeup.txt
+  402  git commit -m "Added Part 3"
+  403  git push
+  404  touch Writeup.txt
+  405  ls
+  406  gedit Writeup.txt
+  407  git add Writeup.txt
+  408  git commit -m "Added empty writeup"
+  409  git push
+  410  rm Writeup.txt
+  411  ls
+  412  gedit writeup.txt
+  413  git add writeup.txt
+  414  git commit -m "added part 3"
+  415  git push
+  416  git pull
+  417  gedit writeup.txt
+  418  git branch
+  419  gedit writeup.txt
+  420  git add writeup.txt
+  421  git commit -m "added part 3"
+  422  git push
+  423  git fetch
+  424  gedit writeup.txt
+  425  git status
+  426  git push
+  427  git push
+  428  git pull
+  429  git add username.txt
+  430  git commit -m "ADded Info"
+  431  git pull
+  432  gedit writeup.txt
+  433  git status
+  434  git add username.txt
+  435  git add writeup.txt
+  436  git commit -m "ADDED INFO"
+  437  git push
+  438  ls
+  439  cd src
+  440  ls
+  441  cd main
+  442  cd java
+  443  cd lab1
+  444  gradle build
+  445  ls
+  446  gradle build Hello.java
+  447  gradle run Hello.java
+  448  cd
+  449  cd CS241-Lab1
+  450  cd lab1-dylonrajah
+  451  ls
+  452  gradle build
+  453  gradle run
+  454  cd src cd main
+  455  cd Hello.java
+  456  cd main
+  457  cd src
+  458  cd main
+  459  cd java
+  460  cd lab1
+  461  cd Hello.java
+  462  cd..cd..
+  463  cd..
+  464  cd..
+  465  cd..
+  466  cd..
+  467  cd
+  468  cd CS241-Lab1
+  469  /lab1-dylonrajah
+  470  ls
+  471  cd lab1-dylonrajah
+  472  ls
+  473  cd src
+  474  cd main
+  475  cd java
+  476  lab1
+  477  cd lab1
+  478  ls
+  479  gedit Hello.java
+  480  gedit Hello.java
+  481  gedit Hello.java
+  482  cd
+  483  cd CS241-Lab1
+  484  cd lab1-dylonrajah
+  485  gradle run --args="241"
+  486  git add src/main/java/lab1/Hello.java
+  487  git commit -m "Hello now prints comman line arg"
+  488  git push
+  489  git add src/main/java/lab1/Hello.java
+  490  git commit -m "Hello now prints comman line arg"
+  491  git push
+  492  git status
+  493  exit
+  494  script
+  495  ls
+  496  cd Assignment1
+  497  git clone https://github.com/WWU-241-CSCI/assignment-1-dylonrajah.git
+  498  git clone
+  499  git clone https://github.com/WWU-241-CSCI/assignment-1-dylonrajah.git
+  500  ls
+  501  history > typescript
